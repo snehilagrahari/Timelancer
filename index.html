@@ -4,246 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing_Page</title>
+    <title>TimeLancer</title>
     <script
         src="https://kit.fontawesome.com/24c494a6b6.js"
         crossorigin="anonymous"
     ></script>
-    <style>
-        
-        #email{
-            width:85%;
-            margin:auto;
-            display:grid;
-            grid-template-columns: repeat(2,1fr);
-            margin-top: 100px;
-            gap:30px;
-            border:0px solid red;
-            margin-bottom: 100px;
-        }
-        #email>div>p{
-            width:80%;
-            font-size: 45px;
-            color:#4c525a;
-           
-            
-
-        }
-        #email>div>p+p{
-            width:75%;
-            color:#4c525a;
-            font-size: 20px;
-            font-family: sans-serif;
-            
-        }
-        #email>div>img{
-            width:110%;
-        }
-        #email>div>div{
-            width:90%;
-        }
-        #mail{
-            width:430px;
-            padding:25px;
-            border-radius: 5px;
-            border:3px solid #6bbcbb;
-        }
-        #btn{
-            width:140px;
-            margin-left:-145px;
-            padding:25px;
-            border:none;
-            /* border:3px solid #6bbcbb; */
-            background-color: #6bbcbb;
-            color:white;   
-        }
-        #btn:hover{
-            background-color: #00B289;
-        }
-        #more{
-            text-align: center;
-            
-        }
-        #more>p{
-            font-size:30px;
-            color:#4c525a;
-        }
-        #more>p+p{
-            width:45%;
-            margin:auto;
-            font-family: sans-serif;
-            font-size: 20px;
-            color:#4c525a;
-            
-            
-        }
-        #without{
-            width:70%;
-            margin:auto;
-            display:grid;
-            grid-template-columns: repeat(2,1fr);
-            margin-top: 20px;
-            gap:30px;
-            border:0px solid red;
-            margin-bottom: 100px;
-        }
-        #without >div>p{
-            font-size: 20px;
-            font-family: sans-serif;
-            color:#4c525a;
-            font-weight: bold;
-        }
-        #without>div>img{
-            width:90%;
-        }
-        #win{
-            display:flex;
-            justify-content: space-between;
-            width:70%;
-            margin:auto;
-            gap:30px;
-            border:0px solid red;
-            margin-bottom: 100px;
-        }
-        #win>div:nth-child(1){
-            width:30%;
-            border:0px solid blue;
-        }
-        #win>div>button{
-            width:85%;
-            padding:20px;
-            border:none;
-            background-color: white;
-            border-bottom:1px solid grey;
-            text-align: left;
-            font-size: 18px;
-            color:#4c525a;
-            
-
-        }
-        #win>div>button:hover{
-            background-color: whitesmoke;
-        }
-        #win>div:nth-child(2){
-            width:65%;
-            border:0px solid red;
-
-        }
-        #win>div>p:nth-child(1){
-            font-size: 30px;
-            color:#4c525a;
-            margin-top:-5px;
-        }
-        #win>div>p+p{
-            width:40%;
-            color:#4c525a;
-        }
-        #win>div>p+p+p{
-            color:#6bbcbb;
-        }
-        #win>div>img{
-            width:75%;
-            margin-left:150px;
-        }
-        #trust{
-            width:80%;
-            margin:auto;
-            border:0px solid red;
-            margin-bottom: 60px;
-        }
-        #trust>p:nth-child(1){
-            font-size:30px;
-            width:50%;
-            margin:auto;
-            text-align: center;
-            color:#464a4f;
-        }
-        #trust>p:nth-child(2){
-            font-size:20px;
-            width:50%;
-            margin:auto;
-            text-align: center;
-            color:#4c525a;
-            margin-bottom: 60px;
-        }
-        #built{
-            width:60%;
-            margin:auto;
-            display:grid;
-            grid-template-columns: repeat(2,1fr);
-            gap:100px;
-        }
-        #built>div>h3{
-            font-family: sans-serif;
-            color:#2e3136;
-        }
-        #built>div>p{
-            font-family: sans-serif;
-            color:#4c525a;
-
-        }
-        #caro{
-            width:80%;
-            margin:auto;
-            border:0px solid red;
-            margin-bottom: 60px;
-        }
-        #caro>p{
-            width:50%;
-            font-size: 30px;
-            margin:auto;
-            text-align: center;
-            color:#464a4f;
-
-        }
-        #car{
-            width:60%;
-            margin:auto;
-            display:grid;
-            grid-template-columns: repeat(2,1fr);
-            gap:100px;
-        }
-        #car>div{
-            margin:auto;
-        }
-        #car>div>img{
-            width:130%;
-            margin:auto;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        }
-        #goto{
-            width:55%;
-            margin:auto;
-            margin-bottom: 100px;
-            background-color: #f2faff;
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-            
-            gap:30px;
-        }
-        #goto>div:nth-child(1){
-            width: 60%;
-            line-height: 5px;
-        }
-        #goto>div>p{
-            font-size:40px;
-            color:#464a4f;
-        }
-        #goto>div:nth-child(2){
-            width:35%;
-        }
-        #goto>div>button{
-            padding:10px;
-            border:none;
-            color:white;
-            background-color: #6bbcbb;
-        }
-        #goto>div>button:hover{
-            background-color: #00B289;
-        }
-
-    </style>
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/index.css">
 </head>
 <body>
     <div id="page">
@@ -251,9 +18,9 @@
             <div>
                 <p>Everything you need to run your business.</p>
                 <p>TimeLancer's all-in-one product suite with smart automation lets you focus on your passion, not your paperwork.</p>
-                <div>
-                    <input type="text" id="mail" placeholder="Enter your email">
-                    <button id="btn">START FREE</button>
+                <div class="flex">
+                    <input type="email" id="mail" placeholder="Enter your email">
+                    <button id="mail-btn">START FREE</button>
                 </div>
             </div>
             <div>
@@ -275,22 +42,22 @@
                 </div>
             </div>
         </div>
-        <div id="win">
-            <div>
+        <div id="window">
+            <div id="window-btn">
                 <button><i style="color:#6bbcbb"class="fa-solid fa-file-invoice-dollar"></i>&nbsp;&nbsp;Proposals</button>
                 <button><i style="color:#6bbcbb" class="fa-regular fa-address-book"></i>&nbsp;&nbsp;Contacts</button>
                 <button><i style="color:#6bbcbb" class="fa-regular fa-folder"></i>&nbsp;&nbsp;Client CRM</button>
                 <button><i style="color:#6bbcbb"class="fa-regular fa-clock"></i>&nbsp;&nbsp;Time Tracking</button>
                 <button><i style="color:#6bbcbb"class="fa-solid fa-file-invoice-dollar"></i>&nbsp;&nbsp;Invoice</button>
                 <button><i style="color:#6bbcbb"class="fa-solid fa-list-check"></i>&nbsp;&nbsp;Task Tracking</button>
-                <button><i style="color:#6bbcbb"class="fa-solid fa-receipt"></i>&nbsp;&nbsp;Accountiing & Taxes</button>
+                <button><i style="color:#6bbcbb"class="fa-solid fa-receipt"></i>&nbsp;&nbsp;Accounting & Taxes</button>
                 <button><i style="color:#6bbcbb"class="fa-solid fa-file-invoice-dollar"></i>&nbsp;&nbsp;Forms</button>
             </div>
-            <div>
+            <div id="window-display">
                 <p>Win More Work</p>
                 <p>With just a few clicks, you can craft structured proposals with clear estimates to close your deals faster.</p>
-                <p>EXPLORE PROPOSALS ----</p>
-                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050acdd031b9f58db100f72_Graphic_Proposal-opt.png" alt="">
+                <p>EXPLORE PROPOSALS <i class="fa-solid fa-arrow-right-long"></i></p>
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/6050acdd031b9f58db100f72_Graphic_Proposal-opt.png" alt="NONE">
             </div>
         </div>
         <div id="trust">
@@ -321,15 +88,11 @@
             </div>
         </div>
         <div id="goto">
-            <div>
-                <p>It’s your business.</p>
-                <p>We’re here to help it grow.</p>
-            </div>
-            <div>
-                <button>GO TO DASHBOARD</button>
-            </div>
+            <p>It’s your Buisness.<br>We’re Here to help it grow. </p>
+            <button id="go_to_dash">GO TO DASHBOARD</button>
         </div>
     </div>
     
 </body>
 </html>
+<script src="Scripts/src/index.js"></script>
