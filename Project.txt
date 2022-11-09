@@ -7,3 +7,7 @@ Member - 2 : fw21_0159 - Suraj Nivrutti Ghode
 Member - 3 : fw21_0634 - himanshu garg
 Member - 4 : fw21_0791 - rushi joshi
 Member - 5 (Project Lead) : fw21_1171 - Snehil Agrahari
+
+<script src="https://kit.fontawesome.com/0e6a2e732f.js" crossorigin="anonymous"></script>
+
+color : #6bbcbb; 
