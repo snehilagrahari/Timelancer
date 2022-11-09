@@ -8,6 +8,8 @@ Member - 3 : fw21_0634 - himanshu garg
 Member - 4 : fw21_0791 - rushi joshi
 Member - 5 (Project Lead) : fw21_1171 - Snehil Agrahari
 
-<script src="https://kit.fontawesome.com/0e6a2e732f.js" crossorigin="anonymous"></script>
+Font-Awesome : <script src="https://kit.fontawesome.com/0e6a2e732f.js" crossorigin="anonymous"></script>
 
 color : #6bbcbb; 
+
+BACKEND : https://obscure-wave-86373.herokuapp.com/  

@@ -1,0 +1,118 @@
+#trial{
+    position:relative;
+    width:85%;
+    margin:30px auto;
+    padding:5px 40px;
+    background:rgb(210, 232, 247);
+    border:1px solid rgb(170, 221, 245);
+}
+#trial i{
+    color:blue;
+    position:absolute;
+    left:15px; 
+    top:21px;
+}
+.blue14{
+    color:blue;
+    font-size:14px
+}
+.black12{
+    color:black;
+    font-size:12px;
+}
+#greeting{
+    width:90%;
+    margin:auto;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    border-bottom:1px solid rgb(231, 231, 231); 
+    padding:10px 0px;
+}
+#dash-link{
+    flex:4;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+#show-dash{
+    padding:7px 10px; 
+    cursor:pointer; 
+    margin:20px;background:none; 
+    color:#66bebd;
+    border:1px solid #64adac;
+    border-radius:5px;
+}
+#dash{
+    width:90%;
+    margin:auto;
+    padding:20px;
+    color:white;
+    position:relative; 
+    background:#85bebe;
+    font-size:20px;
+    display:none;
+}
+#hide-dash{
+    position:absolute;
+    right:20px;
+    top:20px;
+    background:none;
+    border:none;
+    font-size:14px;
+    cursor:pointer;
+}
+
+
+
+
+#details{
+    width:90%;
+    display:flex;
+    padding:0;
+    margin:auto;
+}
+.detail{
+    border:1px solid rgb(223, 222, 222);
+    margin:10px;
+    border-radius:10px;
+}
+#projects-box{
+    min-height:300px;
+}
+#clients-box{
+    min-height:200px;
+}
+#tasks-box{
+    min-height:400px;
+}
+#activity{
+    min-height:300px;
+}
+#earnings-box{
+    min-height:200px;
+}
+.head{
+    display:flex;
+    padding:5px;
+    align-items:center;
+    border-bottom:1px solid rgb(236, 236, 236);
+    justify-content:space-between;
+}
+.option{
+    border:1px solid rgb(216, 216, 216);
+    border-radius:10px;
+    margin:3px 0px; 
+    display:flex;
+    align-items:center;
+    padding:0px 5px;
+    cursor:pointer;
+}
+.option i{
+    color:black;
+    font-size:30px;
+    margin-right:10px;
+}
+.option:hover{
+    border: 1px solid #66bebd;
+}
