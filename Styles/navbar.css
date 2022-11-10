@@ -7,20 +7,21 @@ body{
 }
 #landing_nav{
     padding: 0% 5%;
-    height: 75px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 #landing_navbar_logo{
   /* border: 1px solid red; */
-    height: 80%;
+    height: 100%;
     margin-left: 40px;
-
+    cursor:pointer;
 }
 #nav_left_main{
   /* border: 1px solid red; */
     display: flex;
+    align-items:center;
     width: 70%;
     margin-right: 70px;
 
@@ -29,14 +30,12 @@ body{
     padding: 0px 20px;
    /* border: 1px solid red; */
     display: flex;
+    align-items:center;
     width: 60%;
     justify-content: space-evenly;
 }
 .inside_nav_left1{
-   /* border: 1px solid red; */
     position: relative;
-    display: inline-block;
-    display: flex;
     width: 17%;
     justify-content: space-between;
     padding: 20px;
@@ -45,14 +44,13 @@ body{
     font-family: "Proximanova opt", sans-serif;
     font-size: 17px;
     color: rgb(53, 48, 48);
-   
+    
 }
 
 /* display:block */
 .inside_nav_left1:hover #products_menu{
     cursor: pointer;
     display: block;
-    
 }
 /* hovering dropdown menu */
 #products_menu{
@@ -60,8 +58,7 @@ body{
     position: absolute;
     /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 08px 12px;
-  z-index: 1;
+  padding: 8px 12px;
   margin-top: 20px;
   margin-left: -130px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -76,7 +73,8 @@ body{
  
     margin: auto;
     display: flex;
-    width: 30%;
+    align-items:center;
+    gap:20px;
     justify-content: space-around;
 }
 #login_btn{
@@ -140,6 +138,9 @@ body{
     height: 90px;
     
 }
+.products_dropdown_subsection:nth-child(2){
+    border-bottom:1px solid grey;
+}
 .products_dropdown_subsection_topic{
     /* border: 1px solid red; */
     font-weight: 550;
@@ -172,7 +173,6 @@ body{
 #template_main_section:hover #template_dropdown_div{
    /* border: 1px solid red; */
   display: block;
-  
 }
 
 #template_dropdown_div{
@@ -181,6 +181,7 @@ body{
   position: absolute;
   margin-top: 20px;
   margin-left: -100px;
+  z-index: 10;
   width: 300px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   padding: 15px 0px 20px 0px;
@@ -192,8 +193,8 @@ body{
 .template_dropdown_main{
     /* border: 1px solid red; */
     display: flex;
-    /* justify-content: space-around; */
 }
 .template_dropdown_img{
     padding: 0px 15px
 }
+
