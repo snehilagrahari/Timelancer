@@ -1,0 +1,199 @@
+/*Landing  Navbar css */
+
+body{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+#landing_nav{
+    padding: 0% 5%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#landing_navbar_logo{
+  /* border: 1px solid red; */
+    height: 80%;
+    margin-left: 40px;
+
+}
+#nav_left_main{
+  /* border: 1px solid red; */
+    display: flex;
+    width: 70%;
+    margin-right: 70px;
+
+}
+#nav_left1{
+    padding: 0px 20px;
+   /* border: 1px solid red; */
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.inside_nav_left1{
+   /* border: 1px solid red; */
+    position: relative;
+    display: inline-block;
+    display: flex;
+    width: 17%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navleft_font{
+    font-family: "Proximanova opt", sans-serif;
+    font-size: 17px;
+    color: rgb(53, 48, 48);
+   
+}
+
+/* display:block */
+.inside_nav_left1:hover #products_menu{
+    cursor: pointer;
+    display: block;
+    
+}
+/* hovering dropdown menu */
+#products_menu{
+    display: none;
+    position: absolute;
+    /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 08px 12px;
+  z-index: 1;
+  margin-top: 20px;
+  margin-left: -130px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#font_dropdown1{
+    /* border: 1px solid red; */
+    
+    width: 25%;
+}
+#nav_left2{
+ 
+    margin: auto;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+#login_btn{
+    color: #00B289;
+    background-color: white;
+   
+}
+#login_btn:hover{
+    cursor: pointer;
+    background-color: #00B289;
+    color: white;
+}
+#start_free_btn{
+    background-color: #00B289;
+    color: white;
+   padding: 10px 25px 9px;
+    margin: 0px;
+    margin-right: 20px; 
+}
+#start_free_btn:hover{
+    background-color: #067d61;
+}
+
+.login_startfree_btn{
+    font-family: "Proximanova opt", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0px 0px 0px 17px;
+    padding: 10px 22px 9px;
+    border: 1px solid #00B289;
+}
+.login_startfree_btn:hover{
+    cursor: pointer;
+
+}
+#reviews_font{
+    margin-left: -22px;
+}
+
+/* Dropdown menu css */
+/* navleft_font & products_menu classes  above are styled to get this drop down*/
+
+.navleft_font:hover{
+    cursor: pointer;
+}
+.workflow_section{
+    /* border: 1px solid red; */
+    display: flex;
+    border-bottom: 1px solid rgb(100, 110, 120);
+   
+}
+.products_dropdown_subsection{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    padding: 30px;
+    letter-spacing: 0.01em;
+    line-height: 1.2em;
+    height: 90px;
+    
+}
+.products_dropdown_subsection_topic{
+    /* border: 1px solid red; */
+    font-weight: 550;
+    margin-bottom: 15px;
+    /* padding: 0px 10px; */
+    font-family: "Amerigo BT Roman";
+    font-size: 20px;
+    color: rgb(80, 70, 70);
+}
+.products_dropdown_subsection_caption{
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+    color: #8d8d97;
+    line-height: 22px;
+    font-size: 17px;
+    font-weight: 400;
+   
+}
+#products_dropright_subsection_toggle{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -15px;
+}
+
+/* templates css dropdown */
+
+
+#template_main_section:hover #template_dropdown_div{
+   /* border: 1px solid red; */
+  display: block;
+  
+}
+
+#template_dropdown_div{
+  /* border: 1px solid red; */
+  display: none;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -100px;
+  width: 300px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 15px 0px 20px 0px;
+}
+.template_dropdown_main{
+    display: flex;
+    padding: 0px 20px;
+}
+.template_dropdown_main{
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+.template_dropdown_img{
+    padding: 0px 15px
+}
