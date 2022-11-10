@@ -121,7 +121,7 @@ h2 {
 
 nav {
     display: flex;
-    height: 60px;
+    height: 70px;
     padding: 0px 10px;
     border-bottom: 1px solid #bbb;
     justify-content: space-between;
