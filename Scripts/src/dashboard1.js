@@ -1,12 +1,22 @@
-import sidebar from "/Components/sidebar.js";
+import sidebar from "../../Components/sidebar.js";
 
 document.getElementById("sidebar").innerHTML = sidebar();
 
-import {sidebarFun,Clients,Projects,Tasks} from "/Scripts/sidebarFun.js";
+import {sidebarFun,Clients,Projects,Tasks} from "../sidebarFun.js";
 
 sidebarFun();
 
-import getTime from "/Scripts/TimeGen.js";
+import navbar from "../../Components/navbar.js"
+
+document.getElementById("navbar").innerHTML = navbar();
+    
+
+import {navbarFun} from "../navbarFun.js";
+
+navbarFun();
+
+
+import getTime from "../TimeGen.js";
 
 window.onload = () => {
     let {day, date, month, time} = getTime();
