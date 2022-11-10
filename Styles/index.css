@@ -1,9 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+#landing_nav{
+    padding: 0% 5%;
+    height: 70px;
+    display: flex;
+    position:sticky;
+    z-index:2;
+    top:0;
+    background:white;
+    justify-content: space-between;
+    align-items: center;
+}
+#landing_navbar_logo{
+  /* border: 1px solid red; */
+    height: 100%;
+    margin-left: 40px;
+    cursor:pointer;
+}
+#nav_left_main{
+  /* border: 1px solid red; */
+    display: flex;
+    align-items:center;
+    width: 70%;
+    margin-right: 70px;
+
+}
+#nav_left1{
+    padding: 0px 20px;
+   /* border: 1px solid red; */
+    display: flex;
+    align-items:center;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.inside_nav_left1{
+    position: relative;
+    width: 17%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navleft_font{
+    font-family: "Proximanova opt", sans-serif;
+    font-size: 17px;
+    color: rgb(53, 48, 48);
+    
+}
+
+/* display:block */
+.inside_nav_left1:hover #products_menu{
+    cursor: pointer;
+    display: block;
+}
+/* hovering dropdown menu */
+#products_menu{
+    display: none;
+    position: absolute;
+  padding: 20px 40px;
+  font-family: "Proximanova opt", sans-serif;
+  z-index:2;
+  background:white;
+  margin-top: 20px;
+  margin-left: -130px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+#font_dropdown1{
+    /* border: 1px solid red; */
+    
+    width: 25%;
+}
+#nav_left2{
+ 
+    margin: auto;
+    display: flex;
+    align-items:center;
+    gap:10px;
+    justify-content: space-around;
+}
+#login_btn{
+    color: #6bbcbb;
+    background-color: white;
+   
+}
+#login_btn:hover{
+    cursor: pointer;
+    background-color: #6bbcbb;
+    color: white;
+}
+#start_free_btn{
+    background-color: #6bbcbb;
+    color: white;
+   padding: 10px 25px 9px;
+    margin: 0px;
+    margin-right: 20px; 
+}
+#start_free_btn:hover{
+    background-color: #428f8e;
+}
+
+.login_startfree_btn{
+    font-family: "Proximanova opt", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid #6bbcbb;
+}
+.login_startfree_btn:hover{
+    cursor: pointer;
+
+}
+#reviews_font{
+    margin-left: -22px;
+}
+
+/* Dropdown menu css */
+/* navleft_font & products_menu classes  above are styled to get this drop down*/
+
+.navleft_font:hover{
+    cursor: pointer;
+}
+.workflow_section{
+    /* border: 1px solid red; */
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+   
+}
+.products_dropdown_subsection{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    padding: 30px 0px;
+    letter-spacing: 0.01em;
+    line-height: 1.2em;
+    height: 90px;
+    
+}
+.products_dropdown_subsection:nth-child(2){
+    border-bottom:1px solid lightgrey;
+}
+.products_dropdown_subsection_topic{
+    /* border: 1px solid red; */
+    font-weight: 550;
+    margin-bottom: 15px;
+    /* padding: 0px 10px; */
+    font-family: "Amerigo BT Roman";
+    font-size: 20px;
+    color: rgb(80, 70, 70);
+}
+.products_dropdown_subsection_caption{
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+    color: #8d8d97;
+    line-height: 22px;
+    font-size: 17px;
+    font-weight: 400;
+   
+}
+
+
+/* templates css dropdown */
+
+
+#template_main_section:hover #template_dropdown_div{
+   /* border: 1px solid red; */
+  display: block;
+}
+
+#template_dropdown_div{
+  /* border: 1px solid red; */
+  display: none;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -90px;
+  background:white;
+  z-index: 2;
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 20px 10px;
+}
+.template_dropdown_main{
+    display: flex;
+    padding: 0px 20px;
+}
+.template_dropdown_name{
+    font-size:14px;
+}
+.template_dropdown_img{
+    padding: 0px 15px
+}
+
 #email{
     width:85%;
     margin:auto;
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    margin-top: 100px;
+    margin-top: 40px;
     z-index:0;
     gap:30px;
     border:0px solid red;
@@ -27,9 +223,10 @@
 #mail{
     flex:6;
     width:70%;
-    padding:20px 5px;
+    padding:20px 0px;
+    padding-left:20px;
     outline:0;
-    font-size:16px;
+    font-size:14px;
     caret-color: #6bbcbb;
     border:3px solid #6bbcbb;
     border-bottom-left-radius: 5px;
@@ -38,8 +235,9 @@
 #mail-btn{
     flex:3;
     padding:20px 5px;
-    font-size:16px;
+    font-size:14px;
     border:none;
+    font-weight:bold;
     background-color: #6bbcbb;
     color:white;  
     cursor:pointer;
@@ -47,7 +245,7 @@
     border-top-right-radius: 5px; 
 }
 #mail-btn:hover{
-    background-color: #00B289;
+    background-color: #428f8e;
 }
 #more{
     text-align: center;
@@ -222,7 +420,7 @@
     background-color: #6bbcbb;
 }
 #goto>button:hover{
-    background-color: #00B289;
+    background-color: #428f8e;
 }
 .flex{
     display:flex;

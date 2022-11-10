@@ -3,6 +3,7 @@
     width:85%;
     margin:30px auto;
     padding:5px 40px;
+    z-index:-1;
     background:rgb(210, 232, 247);
     border:1px solid rgb(170, 221, 245);
 }
@@ -104,14 +105,16 @@
     border-radius:10px;
     margin:3px 0px; 
     display:flex;
+    font-size: 14px;
+    color:grey;
     align-items:center;
     padding:0px 5px;
     cursor:pointer;
 }
 .option i{
-    color:black;
-    font-size:30px;
-    margin-right:10px;
+    color:lightgray;
+    font-size:20px;
+    margin:0px 10px;
 }
 .option:hover{
     border: 1px solid #66bebd;
