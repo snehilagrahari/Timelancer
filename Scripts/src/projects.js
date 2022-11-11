@@ -1,13 +1,13 @@
-import sidebar from "../../Components/sidebar.js"
+import sidebar from "./Components/sidebar.js"
 document.getElementById("sidebar").innerHTML = sidebar();
 
-import {sidebarFun , Clients , Projects , Tasks } from "../sidebarFun.js"
+import {sidebarFun , Clients , Projects , Tasks } from "./Scripts/sidebarFun.js"
 sidebarFun();
 
-import navbar from "../../Components/navbar.js"
+import navbar from "./Components/navbar.js"
 
 document.getElementById("navbar").innerHTML = navbar();
-import {navbarFun} from "../navbarFun.js";
+import {navbarFun} from "./Scripts/navbarFun.js";
 
 navbarFun();
 
