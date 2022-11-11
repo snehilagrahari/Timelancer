@@ -11,19 +11,17 @@
     ></script>
     <link rel="stylesheet" href="Styles/sidebar.css" />
     <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="Styles/invoice.css"/>
+    <link rel="stylesheet" href="Style/invoice.css" />
+    <link rel="stylesheet" href="Style/table.css" />
   </head>
-  <style>
-    
-  </style>
+  <style></style>
   <body>
     <nav id="sidebar">
       <!-- Import Sidebar body -->
     </nav>
 
     <section id="navbar">
-<!-- import navbar -->
-
+      <!-- import navbar -->
     </section>
     <section id="trial">
       <i class="fa-solid fa-circle-info"></i>
@@ -68,7 +66,13 @@
       <div><button id="learn_more">Learn More</button></div>
     </div>
     <div id="filter">
-      <div class="search_advance_filter_btn">Filter</div>
+      <div class="search_advance_filter_btn">
+        <select value="Filter With" id="dropdown">
+          <option value="">Filter With</option>
+          <option value="Low">Paid</option>
+          <option value="Medium">Unpaid</option>
+        </select>
+      </div>
       <div><button id="newinvoice" class="btn">New Invoice</button></div>
     </div>
     <div id="mid_div">
@@ -104,6 +108,4 @@
     </div>
   </article>
 </html>
-<script type="module" src="Scripts/src/Invoice.js">
-  
-</script>
+<script type="module" src="Scripts/src/Invoice.js"></script>
