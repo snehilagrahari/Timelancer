@@ -1,0 +1,92 @@
+#upper_div {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 60px 60px;
+  border-radius: 10px;
+}
+img {
+  width: 3%;
+}
+#learn_more {
+  background-color: #fefefe;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20%;
+  padding: 9px 17px 7px;
+}
+
+#filter {
+  display: flex;
+  justify-content: space-around;
+}
+#newinvoice {
+  color: #fff;
+  background-color: #00b289;
+  border-color: #00b289;
+  background-image: linear-gradient(to bottom, #00b289 0%, #00a881 100%);
+}
+.btn {
+  position: relative;
+  min-height: 40px;
+  max-width: 100%;
+  word-break: break-word;
+  white-space: normal;
+  padding: 10px 20px 7px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  background: #ccd0d2;
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: proxima nova, helvetica neue, sans-serif;
+  -webkit-font-smoothing: auto;
+  border-radius: 3px;
+  transition: background-image 0.2s ease, background 0.2s ease,
+    box-shadow 0.2s ease, color 0.2s ease, border 0.2s ease;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.search_advance_filter_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+  padding: 3px 10px 1px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #292a2d;
+  cursor: pointer;
+  transition: color 0.1s ease;
+}
+#mid_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
