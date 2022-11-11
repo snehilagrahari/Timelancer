@@ -38,7 +38,9 @@ const getTime = ()=>{
         time = "Afternoon";
     else
         time = "Evening";
-    return {day, date, month_num, month, time};
+
+    let year = today.getFullYear();
+    return {day, date, month_num, month, time, year};
 }
 
 export default getTime;
