@@ -4,9 +4,8 @@ import sidebar from "../../Components/sidebar.js";
 
   import {
     sidebarFun,
-    Clients,
-    Projects,
-    Tasks,
+    Invoices,
+    invoiceSubmit
   } from "../sidebarFun.js";
 
   sidebarFun();

@@ -160,6 +160,19 @@
         caret-color: green;
         outline:1px solid white;
     }
+    .create select{
+        margin:10px 0px 25px 0px;
+        padding:7px 10px;
+        border:1px solid grey;
+        border-radius:5px;
+        font-size:16px;
+        caret-color: green;
+        outline:1px solid white;
+    }
+    .create select>option{
+        padding:7px 10px;
+        font-size:16px;
+    }
     .create input:hover{
         outline:1px solid green;
     }
@@ -182,7 +195,7 @@
     width:100%;
     padding:0px;
     display:flex;
-    z-index:3;
+    z-index:1;
     justify-content:space-between;
     align-items:center;
     border-bottom:1px solid lightgray;
@@ -414,3 +427,21 @@
     cursor:pointer;
 }
 
+#success{
+    color:green;
+    text-align:center;
+    font-size:25px;
+}
+#success i{
+    color:green;
+    font-size:30px;
+}
+#loader{
+    width:100%;
+    display:grid;
+    place-items:center;
+    padding:20px 0px 40px 0px; 
+}
+#loader img{
+    width:100px;
+}

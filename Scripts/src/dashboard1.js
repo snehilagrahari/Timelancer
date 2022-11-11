@@ -2,7 +2,7 @@ import sidebar from "../../Components/sidebar.js";
 
 document.getElementById("sidebar").innerHTML = sidebar();
 
-import {sidebarFun,Clients,Projects,Tasks} from "../sidebarFun.js";
+import {sidebarFun, Clients, Projects, Tasks, Invoices, taskSubmit, invoiceSubmit, projectSubmit, clientSubmit, loader} from "../sidebarFun.js";
 
 sidebarFun();
 
@@ -37,13 +37,135 @@ window.onload = () => {
     document.getElementById("new-client").onclick = () =>{
         document.getElementById("new-data").style.display = "grid";
         document.getElementById("form").innerHTML = Clients();
+        clientSubmit();
     }
     document.getElementById("new-project").onclick = () =>{
         document.getElementById("new-data").style.display = "grid";
         document.getElementById("form").innerHTML = Projects();
+        projectSubmit();
     }
     document.getElementById("new-task").onclick = () =>{
         document.getElementById("new-data").style.display = "grid";
         document.getElementById("form").innerHTML = Tasks();
+        taskSubmit();
+    }
+    document.getElementById("send-an-invoice").onclick = () => {
+        document.getElementById("new-data").style.display = "grid";
+        document.getElementById("form").innerHTML = Invoices();
+        invoiceSubmit();
+    }
+    appendClients();
+    appendProjects();
+    appendTasks();
+    appendInvoices();
+}
+
+async function getClients()
+{
+    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/clients`);
+    let data = await res.json();
+
+    return data;
+}
+async function getProjects()
+{
+    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/projects`);
+    let data = await res.json();
+    return data;
+}
+async function getTasks()
+{
+    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks`);
+    let data = await res.json();
+    return data;
+}
+async function getInvoices()
+{
+    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/invoices`);
+    let data = await res.json();
+    return data;
+}
+
+async function appendClients()
+{
+    loader("clients-table");
+    let data = await getClients();
+    let box = document.getElementById("clients-table");
+    box.innerHTML = null;
+    let i=0;
+    if(data!=null)
+    {
+        data.forEach(function(el){
+            i++;
+            let str = `<tr>
+            <td>${i}.</td>
+            <td>${el.name}</td>
+            <td>${el.email}</td>
+        </tr>`
+            box.innerHTML += str;
+        })
+    }
+}
+async function appendProjects()
+{
+    loader("projects-table");
+    let data = await getProjects();
+    let box = document.getElementById("projects-table");
+    box.innerHTML = null;
+    let i=0;
+    if(data!=null)
+    {
+        data.forEach(function(el){
+            i++;
+            let str = `<tr>
+            <td>${i}.</td>
+            <td>${el.project}</td>
+            <td>${el.client}</td>
+            <td>${el.due_date}</td>
+        </tr>`
+            box.innerHTML += str;
+        })
+    }
+}
+async function appendTasks()
+{
+    loader("tasks-table");
+    let data = await getTasks();
+    let box = document.getElementById("tasks-table");
+    box.innerHTML = null;
+    let i=0;
+    if(data!=null)
+    {
+        data.forEach(function(el){
+            i++;
+            let str = `<tr>
+            <td>${i}.</td>
+            <td>${el.task}</td>
+            <td>${el.project}</td>
+            <td>${el.due_date}</td>
+        </tr>`
+            box.innerHTML += str;
+        })
+    }
+}
+async function appendInvoices()
+{
+    loader("invoices-table");
+    let data = await getInvoices();
+    let box = document.getElementById("invoices-table");
+    box.innerHTML = null;
+    let i=0;
+    if(data!=null)
+    {
+        data.forEach(function(el){
+            i++;
+            let str = `<tr>
+            <td>${i}.</td>
+            <td>${el.name}</td>
+            <td>${el.email}</td>
+            <td>${el.gen_date}</td>
+        </tr>`
+            box.innerHTML += str;
+        })
     }
 }
