@@ -45,7 +45,7 @@
 #filte>select{
     width:200px;
     padding:10px;
-   
+    border-collapse:collapse;
     border:2px solid #6bbcbb;
     border-radius: 3px;
 }
@@ -61,6 +61,7 @@ option{
     color:white;
     border:none;
     width:150px;
+    
     border-radius: 3px;
 }
 #filte>button:hover{
@@ -99,6 +100,21 @@ option{
 .add-btn:hover{
     background-color: #00b289;
 }
+table{
+        font-family:sans-serif;
+        border-collapse: collapse;
+        width:80%;
+        margin:auto;
+        text-align: center;
+        margin-top: 40px;
+        color:#464a4f;
+        
+      }
+      table th{
+        border:1px solid #ddd;
+        padding:10px;
+        text-align: center;
+      }
 </style>
 <body>
     <nav id="sidebar">
@@ -127,12 +143,22 @@ option{
             </div>
             
         </div>
-        <div id="projects-box"class="detail">
-            <div class="head">
-                <h3>Projects</h3>
-                
-            </div>
-        </div>
+        <table>
+            <thead>
+              <tr>
+                <th>Client Name</th>
+                <th>Client E-mail</th>
+                <th>Project Name</th>
+                <th>Status</th>
+                <th>Delete Project</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Append all the rows here  -->
+              
+            </tbody>
+          </table>
     </div>
 </body>
 <article id="new-data">
