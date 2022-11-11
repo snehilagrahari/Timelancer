@@ -75,7 +75,7 @@
 
     <div id="task_table">
         <section class="task_table_div1">
-            <div id="table_task">TASK</div>
+            <div id="table__div1_task">TASK</div>
             <section id="table_projectAnd_others">
                 <div>PROJECT</div>
                 <div>CLIENT</div>
@@ -84,9 +84,31 @@
         </section>
 
         <!-- TASK table row addition section -->
-        <section>
-            <div><input type="checkbox"></div>
-            
+        <section id="task_table_div2">
+            <div>
+                <input id="checkbox" type="checkbox">
+                <input type="text" id="task_input" placeholder="Enter your task...">
+            </div>
+
+            <div id="project_client_dueDate">
+                <select id="project_selection" name="project_selection">
+                    <option value="No project">No project</option>
+                    <option value="App clone">App clone</option>
+                    <option value="project-2">project-2</option>
+                    <option value="project-3">project-3</option>
+                </select>
+                <section>
+                    <input id="client_input" type="text" placeholder="--">
+                    <input type="date" id="date_div">
+                </section>
+
+            </div>
+
+            <div>
+                <section id="ellipsis_section">
+                    <span id="ellipsis">&#10296;</span>
+                </section>
+            </div>
             
         </section>
     </div>

@@ -142,18 +142,19 @@ body{
     font-size: 14px;
     font-family: "Proxima Nova", "Helvetica Neue", Helvetica, arial, sans-serif;
     width: 90%;
-    border: 1px solid red;
+    border: none;
     height: 70px;
     margin: auto;
     margin-top: 50px;
 }
 .task_table_div1{
-    border: 1px solid red;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #table_projectAnd_others{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -164,4 +165,64 @@ body{
 }
 #table_projectAnd_others>div{
     font-size: 14px;
+}
+
+/* TASK table row addition section */
+
+#task_table_div2{
+    padding: 5px 7px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border: 1px solid grey;
+    background-color: white;
+    display: flex;
+    align-content: center;
+}
+#checkbox{
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+#task_input{
+    border: 1px solid silver;
+    border-radius: 5px;
+    caret-color: #666666;
+    padding: 5px;
+}
+#task_input:placeholder-shown{
+    border: 1px solid silver;
+    padding-left: 5px;
+}
+#project_client_dueDate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 100%; */
+    margin-left: 270px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    width: 450px;
+}
+#project_selection{
+    padding: 5px 10px;
+    border: 1px solid silver;
+}
+#client_input{
+    width: 40px;
+    border: none;
+    margin-right: 80px;
+}
+#date_div{
+    margin: left;
+    width: 120px;
+}
+#date_div::placeholder{
+    padding: 25px; 
+}
+#ellipsis_section{
+    margin-top: 7px;
+    margin-left: 230px;
+}
+#ellipsis {
+    font-size: 25px;
 }
