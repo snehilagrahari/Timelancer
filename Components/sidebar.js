@@ -8,7 +8,7 @@ function sidebar(){
             <li><a href="#" class="category"><i class="fas fa-home"></i> &nbsp;Dashboard</a></li>
             <li><a href="#" class="category"><i class="fas fa-users"></i> &nbsp;Clients</a></li>
             <li><a href="#" class="category"><i class="fa-solid fa-folder"></i> &nbsp;Projects</a></li>
-            <li><a href="#" class="category"><i class="fa-solid fa-list-check"></i> &nbsp;Tasks</a></li>
+            <li><a href="./tasks.html" class="category"><i class="fa-solid fa-list-check"></i> &nbsp;Tasks</a></li>
         </ul>
     </div>
     <div class="sidebar-sec">

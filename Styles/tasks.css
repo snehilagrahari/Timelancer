@@ -1,0 +1,228 @@
+body{
+    background-color: #fbfcfc;
+}
+#buttons_div{
+    display: flex;
+    margin-left: 50px;
+    /* border: 1px solid red; */
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+/* Dropdown Button */
+.container {
+
+    /* border: 1px solid red; */
+    width:150px;
+
+    position: relative;
+
+}
+
+#newTask{
+
+
+    padding: 9px 12px;
+
+    font-size: 15px;
+
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-weight: 550;
+
+    letter-spacing: 0.05em;
+
+    border-radius: 2px;
+
+    width:150px;
+
+
+    transition: 0.3s;
+
+
+
+    background-color: #00b088;
+    color: white;
+
+    border: 1px solid silver;
+    border-radius: 2px;
+}
+
+#newTask:hover{
+    cursor: pointer;
+    background-color: #0b765d;
+}
+
+.click{
+
+    background-color: white;
+    
+
+}
+
+.click:hover {
+
+    background-color: none;
+    border: 1px solid #00b088;
+    cursor: pointer;
+
+}
+
+.click,.links {
+
+    padding: 9px 12px;
+
+    font-size: 15px;
+
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-weight: 550;
+
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.04em;
+
+    border: 1px solid silver;
+
+    border-radius: 2px;
+
+    width:150px;
+
+    color:#3a4551;
+
+    transition: 0.3s;
+
+}
+
+#dropdown_activeBtn{
+    padding:0px 7px 0px 25px;
+    opacity :0.3 ;
+}
+#dropdown_activeBtn:hover{
+    opacity :1 ;
+    color: gray;
+}
+
+.list {
+
+    position: absolute;
+
+    transform: scaleY(0);
+
+    transform-origin: top;
+
+    transition: 0.3s;
+
+}
+
+.newlist {
+
+    transform: scaleY(1);
+
+}
+
+.links {
+    background-color: white;
+    border: 1px solid #00b088;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.links:hover {
+
+    background-color: #00b088;
+
+    transform: scale(1.1);
+
+}
+
+
+/* task table css */
+
+#task_table{
+    font-size: 14px;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, arial, sans-serif;
+    width: 90%;
+    border: none;
+    height: 70px;
+    margin: auto;
+    margin-top: 50px;
+}
+.task_table_div1{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#table_projectAnd_others{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 300px;
+    width: 400px;
+    justify-content: space-between;
+    
+}
+#table_projectAnd_others>div{
+    font-size: 14px;
+}
+
+/* TASK table row addition section */
+
+#task_table_div2{
+    padding: 5px 7px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border: 1px solid grey;
+    background-color: white;
+    display: flex;
+    align-content: center;
+}
+#checkbox{
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+#task_input{
+    border: 1px solid silver;
+    border-radius: 5px;
+    caret-color: #666666;
+    padding: 5px;
+}
+#task_input:placeholder-shown{
+    border: 1px solid silver;
+    padding-left: 5px;
+}
+#project_client_dueDate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 100%; */
+    margin-left: 270px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    width: 450px;
+}
+#project_selection{
+    padding: 5px 10px;
+    border: 1px solid silver;
+}
+#client_input{
+    width: 40px;
+    border: none;
+    margin-right: 80px;
+}
+#date_div{
+    margin: left;
+    width: 120px;
+}
+#date_div::placeholder{
+    padding: 25px; 
+}
+#ellipsis_section{
+    margin-top: 7px;
+    margin-left: 230px;
+}
+#ellipsis {
+    font-size: 25px;
+}
