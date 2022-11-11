@@ -1,5 +1,6 @@
 function sidebarFun()
     {
+        
         document.getElementById("slider").onclick = ()=>{
             if(document.getElementById("slider").className == "show")
             {
@@ -28,6 +29,7 @@ function sidebarFun()
             document.getElementById("form").innerHTML = Tasks();
         }
     }
+
 
     function Clients(){
 

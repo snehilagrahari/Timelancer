@@ -1,0 +1,177 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: "proxima nova", "helvetica neue", sans-serif;;
+}
+#body{
+    display:flex;
+}
+#left{
+    flex:7.5;
+    border:1px solid lightgray;
+    position:relative;
+    overflow:hidden;
+}
+#right{
+    flex:3;
+    padding:20px;
+}
+#left>p{
+    text-align:center;
+    font-size:25px;
+    margin:0;
+}
+#container{
+    border:1px solid #6bbcbb;
+    width:250px;
+    border-radius:5px;
+    margin:40px auto 40px auto;
+    padding:20px 20px;
+    display:flex;
+    flex-direction:column;
+}
+#container>h4{
+    margin:0px;
+    
+}
+#container .text{
+    margin:7px 0px;
+    font-size:14px;
+    color:black;
+}
+#container .price{
+    margin:7px 0px;
+    color:#6bbcbb;
+    font-size:28px;
+}
+.text2{
+    font-size:10px;
+    color:black;
+    margin:0;
+}
+#container i{
+    color:#6bbcbb;
+    font-size:16px;
+}
+.top-right{
+    position: absolute;
+    right: -2px;
+    top: 0;
+    z-index:-1;
+}
+.bottom-left{
+    position: absolute;
+    left: 0;
+    top: 350px;
+    z-index:-1;
+}
+#starter-plan{
+    margin:40px 20px 20px 20px;
+    padding:10px 20px;
+    background:#f2faff;
+    font-size:14px; 
+}
+#promo{
+    color:#6bbcbb;
+    cursor:pointer;
+}
+#promo-box{
+    width:100%;
+    display:none;
+    justify-content: space-between;
+}
+#promo-box input{
+    padding:4px 5px;
+    outline:0;
+    width:60%;
+    border:1px solid lightgray;
+    border-radius:5px;
+}
+#promo-box input:hover{
+    border:1px solid #6bbcbb;
+}
+#promo-btn{
+    color:#6bbcbb;
+    background:none;
+    outline:none;
+    border:none;
+    cursor:pointer;
+}
+.bold{
+    font-weight:bold;
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+}
+#pink-box{
+    margin:20px;
+    padding:10px 20px;
+    background:#fefdf7;
+    font-size:14px;
+    border:1px solid #f0b6da;
+}
+#pink-box p{
+    margin:5px 0px;
+}
+.relative{
+    position:relative;
+    align-items:center;
+}
+#pink-box i{
+    color:rgb(235, 221, 96);
+}
+#user-details{
+    margin:40px 20px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+#user-details form i{
+    position:absolute;
+    left:10px;
+    font-size:14px;
+} 
+input{
+    padding:7px 3px 7px 30px;
+    border:1px solid lightgray;
+    font-size:14px;
+    margin:7px 0px;
+    width:100%;
+    outline:0;
+}
+input:hover{
+    border:1px solid #6bbcbb;
+}
+input:focus{
+    border:1px solid #6bbcbb;
+}
+#submit{
+    color:white;
+    font-weight:bold;
+    padding:10px;
+    background:#6bbcbb;
+    bordeR:0;
+    outline:0;
+    margin-top:15px;
+    cursor:pointer;
+    border-radius:5px;
+}
+.grey{
+    color:gray;
+    text-align: center;
+}
+#close{
+    border:0;
+    outline:0;
+    font-size:20px;
+    color:rgb(245, 71, 71);
+    position:fixed;
+    top:15px;
+    right:15px;
+    background:none;
+    cursor:pointer;
+}
+#close:hover{
+    color:grey;
+}

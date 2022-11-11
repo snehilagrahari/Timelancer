@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0e6a2e732f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+</head>
+<style>
+    #trial{
+    position:relative;
+    width:85%;
+    margin:30px auto;
+    padding:5px 40px;
+    background:rgb(210, 232, 247);
+    border:1px solid rgb(170, 221, 245);
+}
+#trial i{
+    color:blue;
+    position:absolute;
+    left:15px; 
+    top:21px;
+}
+.blue14{
+    color:blue;
+    font-size:14px
+}
+.black12{
+    color:black;
+    font-size:12px;
+}
+#filt{
+    width:90%;
+    margin:auto;
+    border:0px solid grey;
+}
+#filte{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+}
+#filte>select{
+    width:200px;
+    padding:10px;
+    border-collapse:collapse;
+    border:2px solid #6bbcbb;
+    border-radius: 3px;
+}
+option{
+    padding:10px;
+}
+#filte>select>option:hover{
+    background-color: #6bbcbb;
+    color:white;
+}
+#filte>button{
+    background-color: #6bbcbb;
+    color:white;
+    border:none;
+    width:150px;
+    
+    border-radius: 3px;
+}
+#filte>button:hover{
+    background-color: #00b289;
+}
+
+#details{
+    width:90%;
+    display:flex;
+    padding:0;
+    margin:auto;
+}
+.detail{
+    border:1px solid rgb(157, 157, 157);
+    margin:10px;
+    border-radius:10px;
+}
+#projects-box{
+    min-height:300px;
+}
+.head{
+    display:flex;
+    padding:5px;
+    align-items:center;
+    border-bottom:1px solid rgb(140, 140, 140);
+    justify-content:space-between;
+}
+.add-btn{
+    padding:10px;
+    background-color: #6bbcbb;
+    color:white;
+    border:none;
+    width:150px;
+    border-radius: 3px;
+}
+.add-btn:hover{
+    background-color: #00b289;
+}
+table{
+        font-family:sans-serif;
+        border-collapse: collapse;
+        width:80%;
+        margin:auto;
+        text-align: center;
+        margin-top: 40px;
+        color:#464a4f;
+        
+      }
+      table th{
+        border:1px solid #ddd;
+        padding:10px;
+        text-align: center;
+      }
+</style>
+<body>
+    <nav id="sidebar">
+         <!-- Import Sidebar body -->
+    </nav>
+    <section id="trial">
+        <i class="fa-solid fa-circle-info"></i>
+        <p class="blue14">Start your 7-Day free trial now.</p>
+        <p class="black12">You currently don't have an active subscription. <a href="#">Start your free Trial now!</a></p>
+    </section>
+    <div id="filt">
+        <div>
+            <h3>Filter By:</h3>
+            <div id="filte">
+                
+                <select>
+                    <option value="">STATUS</option>
+                    <option value="Active">Active</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Archived">Archived</option>
+                </select>
+                <div>
+                    
+                    <button id="new-project" class="add-btn">New Project</button>
+                </div>
+            </div>
+            
+        </div>
+        <table>
+            <thead>
+              <tr>
+                <th>Client Name</th>
+                <th>Client E-mail</th>
+                <th>Project Name</th>
+                <th>Status</th>
+                <th>Delete Project</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Append all the rows here  -->
+              
+            </tbody>
+          </table>
+    </div>
+</body>
+<article id="new-data">
+    <div id="box">
+        <button id="close-box">X</button>
+        <div id="form">
+            <!-- Appending form as per use -->
+        </div>
+    </div>
+</article>
+</html>
+<script type="module">
+    import sidebar from "./Components/sidebar.js"
+
+    document.getElementById("sidebar").innerHTML = sidebar();
+    import {sidebarFun , Clients , Projects , Tasks } from "./Scripts/sidebarFun.js"
+
+    sidebarFun();
+
+    window.onload = () => {
+        document.getElementById("new-project").onclick = () =>{
+        document.getElementById("new-data").style.display = "grid";
+        document.getElementById("form").innerHTML = Projects();
+    }
+    }
+</script>
