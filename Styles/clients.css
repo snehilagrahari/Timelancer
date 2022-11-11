@@ -1,23 +1,159 @@
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+
 #trial {
-    position: relative;
-    width: 85%;
-    margin: 30px auto;
-    z-index:-1;
-    padding: 5px 40px;
-    background: rgb(210, 232, 247);
-    border: 1px solid rgb(170, 221, 245);
-  }
-  #trial i {
-    color: blue;
-    position: absolute;
-    left: 15px;
-    top: 21px;
-  }
-  .blue14 {
-    color: blue;
-    font-size: 14px;
-  }
-  .black12 {
-    color: black;
-    font-size: 12px;
-  }
+  position: relative;
+
+  margin: 30px auto;
+  z-index: -1;
+  padding: 5px 40px;
+  background: rgb(210, 232, 247);
+  border: 1px solid rgb(170, 221, 245);
+}
+
+#trial i {
+  color: blue;
+  position: absolute;
+  left: 15px;
+  top: 21px;
+}
+
+.blue14 {
+  color: blue;
+  font-size: 14px;
+}
+
+.black12 {
+  color: black;
+  font-size: 12px;
+}
+
+#container {
+  margin: 0px 50px;
+
+}
+
+#client-data {
+  height: 900px;
+}
+
+#int-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#client-filter-btn {
+  display: flex;
+  border: 1px solid grey;
+
+}
+
+#search-icon {
+  border: 1px solid grey;
+}
+
+#filter-btn {
+  border: 1px solid grey;
+
+}
+
+#filter-data-option {
+  display: none;
+}
+
+
+#add-client-btn {
+  color: white;
+  background-color: #6bbcbb;
+  padding: 10px 20px 7px;
+  border-radius: 3px;
+
+}
+
+table {
+
+
+  font-size: 15px;
+  color: grey;
+  margin-top: 50px;
+  width: 100%;
+  text-align: left;
+
+}
+
+#a {
+  width: 30%;
+}
+
+#b,
+#c,
+#d {
+  width: 20%;
+}
+
+
+
+
+#clients-data-null {
+  min-width: 100%;
+  border: 1px solid grey;
+  min-height: 200px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+
+
+}
+
+#clients-data-null>p {
+  color: grey;
+  margin-top: 100px;
+}
+
+.footer {
+  margin: 0px 200px;
+
+  text-align: center;
+}
+
+#footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  font-size: 12px;
+  color: #92969f;
+  text-decoration: none;
+  margin: 0 30px 20px 30px;
+  font-weight: bolder;
+
+}
+
+#footer-app-links {
+  font-size: 14px;
+  color: #92969f;
+  margin-bottom: 20px;
+
+}
+
+.footer-app-link {
+  text-decoration: none;
+  color: #92969f;
+  margin: 0 20px 20px 20px;
+}
+
+.footer-legal-policies {
+  font-size: 12px;
+  color: #e5e8e8;
+  margin-bottom: 50px;
+}
+
+.footer-legal-policies a {
+
+  color: #e5e8e8;
+
+
+}
