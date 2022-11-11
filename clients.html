@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0e6a2e732f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/dashboard.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+</head>
+
+<nav id="sidebar">
+    <!-- Import Sidebar body -->
+</nav>
+
+
+<body>
+    <div></div>
+    <div id="container">
+        <section id="trial">
+            <i class="fa-solid fa-circle-info"></i>
+            <p class="blue14">Start your 7-Day free trial now.</p>
+            <p class="black12">You currently don't have an active subscription. <a href="#">Start your free Trial
+                    now!</a>
+            </p>
+        </section>
+        <div id="client-data">
+            <div id="int-btn">
+                <div id="client-filter-btn">
+                    <div id="search-icon"></div>
+                    <div id="client-filter">Filter
+                        <label>STATUS</label>
+                        <select id="client-status">
+                            <option value="Active">Active</option>
+                            <option value="Archived">Archived</option>
+                        </select>
+                        <label>TAGS</label>
+                        <select id="client-tags">
+                            <option value="client">client</option>
+                            <option value="Lead">Lead</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div id="add-client-btn">New Client</div>
+            </div>
+            <div id="table-lables">
+                <span>CLIENT</span>
+                <span>CONTACT NAME</span>
+                <span>CONTACT EMAIL</span>
+                <span>TAGS</span>
+            </div>
+            <div id="clients-data-table">
+                No clients to show.
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="box">
+            <div class="row">
+
+                <div>
+                    <div>
+                        <a class="footer-link" href="#" target="_blank">
+                            Feature Requests
+                        </a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#" target="_blank">
+                            Help Center
+                        </a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#" target="_blank">
+                            Blog &amp; Resources
+                        </a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#">Pricing</a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#" target="_blank">
+                            Privacy policy
+                        </a>
+                    </div>
+                    <div class="footer-app-links"></div>
+
+                </div>
+
+            </div>
+            <div class="footer-legal-policies">
+                <div class="footer-disclaimer">
+                    ©2022 TimeLancer Technologies Inc — Payments, banking, and issuing services are provided by <a
+                        target="_blank" href="#">Stripe Payments Company</a>, Evolve Bank &amp;
+                    Trust (Member FDIC), and Celtic Bank (Member FDIC), respectively. TimeLancer is not a law firm, and
+                    does
+                    not provide legal services, advice, or representation.&nbsp;&nbsp;
+                    <a target="_blank" href="#">Terms</a>
+                    &nbsp;&nbsp;
+                    <a href="#" target="_blank">Credits</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+<article id="new-data">
+    <div id="box">
+        <button id="close-box">X</button>
+        <div id="form">
+            <!-- Appending form as per use -->
+        </div>
+    </div>
+</article>
+
+</html>
+<script type="module" src="clients.js">
+
+</script>

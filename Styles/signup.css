@@ -40,7 +40,7 @@ body {
 #input>input {
 
     height: 40px;
-    padding:0px 5px;
+    padding: 0px 5px;
     width: 100%;
     font-size: 16px;
     color: #292a2d;
@@ -48,17 +48,17 @@ body {
     border: 1px solid #ccd0d2;
     border-radius: 4px;
     transition: all .25s ease;
-    outline:none;
+    outline: none;
 }
 
 #input>input:hover {
-    border-color: #00af87;
+    border-color: #6bbcbb;
 }
 
 
 #signUP-btn {
     width: 100%;
-    background: #00af87;
+    background: #6bbcbb;
     color: white;
     display: flex;
     justify-content: center;
@@ -70,7 +70,7 @@ body {
 }
 
 #signUP-btn:hover {
-    background-color: #00aa83;
+    background-color: #6bbcbb;
 }
 
 #option {
@@ -80,7 +80,7 @@ body {
 }
 
 #option>p {
-    color: #00af87;
+    color: #6bbcbb;
     cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ h2 {
 }
 
 .signUP-google-btn:hover {
-    border-color: #00af87;
+    border-color: #6bbcbb;
 }
 
 .signUP-divider-section {
@@ -136,11 +136,13 @@ h2 {
     width: 66.6666666667%;
     padding-right: 20px !important;
 }
-#country_{
-    outline:0;
+
+#country_ {
+    outline: 0;
 }
-#inr{
-    outline:none;
+
+#inr {
+    outline: none;
 }
 
 .terms-conditions {
@@ -199,6 +201,7 @@ select {
 label {
     font-size: 12px;
     color: #cfd2d4;
+
 }
 
 form>p {
@@ -213,6 +216,10 @@ form>p {
     border-radius: 10px 0 0 10px;
     background-position: bottom left;
     flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 
 }
 
@@ -222,6 +229,36 @@ form>p {
 
 img {
     width: 40%;
-    margin-top: 70px;
-    margin-left: 20px;
+}
+
+.signup-page-text {
+    margin-top: 15%;
+
+}
+
+.signup-page-quote {
+    margin-bottom: 15%;
+    font-size: 12px;
+    padding: 0px 50px 0px 50px;
+
+}
+
+.signup-page-quote>div+div {
+    color: gray;
+    font-size: 10px;
+    margin-top: 2%;
+}
+
+#login-btn {
+    width: 100%;
+    border: 1px solid #6bbcbb;
+    color: #6bbcbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 45px;
+    border-radius: 6px;
+    cursor: pointer;
+
 }
