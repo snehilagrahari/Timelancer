@@ -134,32 +134,38 @@ h2{
     width:350px;
     border:1px solid rgb(187, 182, 182);
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-    padding:30px;
-    
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 400px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    text-align: left;
-    margin-bottom: 100px;
-  }
-  .dropdown-content>input{
-    width:340px;
-    padding:10px;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+
+#password_div
+{
+    width:90%;
+    margin:auto;
+    border:none;
+    padding:20px auto;
+}
+#dropdown{
+    display : none;
+    margin:20px auto;
+}
+#update_password>input{
+    padding:12px 7px;
+    border:1px solid lightgrey;
+    outline:0;
+}
+#update_password input:last-child{
+    background:#6bbcbb;
+    color:white;
+    cursor:pointer;
+}
+#update_password input:last-child:hover{
+    background-color:#00b289
+}
+#update_password>h6{
+    margin-top:0px;
+}
+#upass{
+    cursor:pointer;
+    margin:20px 0px;
+}
 
 </style>
 <body>
@@ -210,20 +216,18 @@ h2{
                     <input type="text" placeholder="Operations Director">
                 </div>
             </div>
-            <div>
-                <div class="dropdown">
-                    <span style="color:#6bbcbb;font-weight:bold;"><i class="fa-solid fa-angle-down"></i>&nbsp;&nbsp;Update Password</span>
-                    <div class="dropdown-content">
-                        <p>CURRENT PASSWORD</p>
-                        <input type="text" placeholder="Old Password">
-                        <p>PASSWORD</p>
-                        <input type="text" placeholder="New Password">
-                        <p>PASSWORD CONFIRMATION</p>
-                        <input type="text" placeholder="New Password">
+
+            <div id="password_div">
+                <div id="upass" style="color:#6bbcbb;font-weight:bold;"><i class="fa-solid fa-angle-down"></i>&nbsp;&nbsp;Update Password</div>
+                <div id="dropdown">
+                    <form id="update_password">
+                        <p>NEW PASSWORD</p>
+                        <input type="password" placeholder="New Password" required id="new_password">
                         <h6>Your password must be at least 6 characters</h6>
-                    </div>
-                    
-                  </div>
+                        <input type="submit" value="Change Password">
+                    </form>
+                </div>    
+                  
                 
             </div>
         </div>
@@ -239,23 +243,8 @@ h2{
     </div>
 </article>
 </html>
-<script type="module">
-    import sidebar from "../../Components/sidebar.js";
+<script type="module" src="Scripts/src/profile.js">
 
-document.getElementById("sidebar").innerHTML = sidebar();
-
-import {sidebarFun,Clients,Projects,Tasks} from "../Scripts/sidebarFun.js";
-
-sidebarFun();
-
-import navbar from "../../Components/navbar.js"
-
-document.getElementById("navbar").innerHTML = navbar();
-    
-
-import {navbarFun} from "./Scripts/navbarFun.js";
-
-navbarFun();
 
 
 </script>
