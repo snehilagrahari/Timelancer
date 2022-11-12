@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dashboard - Timelancer</title>
+    <title>My Dashboard - TimeLancer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="Styles/sidebar.css">
     <link rel="stylesheet" href="Styles/dashboard.css">
@@ -18,8 +18,8 @@
         <!-- Import Navbar body -->
     </section>
     <section id="trial">
-        <i class="fa-solid fa-circle-info"></i>
-        <p class="blue14">Start your 7-Day free trial now.</p>
+        
+        <p class="blue14"> <i class="fa-solid fa-circle-info"></i> Start your 7-Day free trial now.</p>
         <p class="black12">You currently don't have an active subscription. <a href="trial.html">Start your free Trial now!</a></p>
     </section>
     <section id="greeting">
@@ -29,19 +29,19 @@
         <div style="flex:3">
             <p style="font-size:16px;color:rgb(110, 110, 110)"><span id="day"></span>, <span id="month"></span> <span id="date"></span></p>
             <h2>
-            Good <span id="time"></span>, <span id="acc_name">Snehil</span>!</h2>
+            Good <span id="time"></span>, <span id="acc_name"></span>!</h2>
         </div>
         <div id="dash-link">
-            <p>Lets Get you setup with Timelancer</p><button id="show-dash">Get Started ></button>
+            <p>Lets Get you setup with TimeLancer</p><button id="show-dash">Get Started ></button>
         </div>
     </section>
     <section id="dash">
         <button id="hide-dash">HIDE</button>
         <ul style="line-height:30px;">
-            <li><i class="fa-solid fa-1"></i> Add Company Details</li>
-            <li><i class="fa-solid fa-2"></i> Create a Client</li>
-            <li><i class="fa-solid fa-3"></i> Create a Project</li>
-            <li><i class="fa-solid fa-4"></i> Create a Task</li>
+            <li><i class="fa-solid fa-1"></i> Create a Client</li>
+            <li><i class="fa-solid fa-2"></i> Create a Project</li>
+            <li><i class="fa-solid fa-3"></i> Create a Task</li>
+            <li><i class="fa-solid fa-4"></i> Work on Your Tasks with Timer</li>
             <li><i class="fa-solid fa-5"></i> Create an Invoice</li>
         </ul>
     </section>
@@ -52,23 +52,66 @@
                     <h3>Clients</h3>
                     <button id="new-client" class="add-btn">+</button>
                 </div>
+                <table class="table">
+                    <thead>    
+                        <tr>
+                            <th>S.no.</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="clients-table"></tbody>
+                </table>
             </div>
             <div id="projects-box"class="detail">
                 <div class="head">
                     <h3>Projects</h3>
                     <button id="new-project" class="add-btn">+</button>
                 </div>
+                <table class="table">
+                    <thead>    
+                        <tr>
+                            <th>S.no.</th>
+                            <th>Name</th>
+                            <th>Client</th>
+                            <th>Due-Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="projects-table"></tbody>
+                </table>
             </div>
             <div id="tasks-box"class="detail">
                 <div class="head">
                     <h3>Tasks</h3>
                     <button id="new-task" class="add-btn">+</button>
                 </div>
+                <table class="table">
+                    <thead>    
+                        <tr>
+                            <th>S.no.</th>
+                            <th>Name</th>
+                            <th>Project</th>
+                            <th>Due-Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tasks-table"></tbody>
+                </table>
             </div>
             <div id="earnings-box"class="detail">
                 <div class="head">
-                    <h3>Earnings</h3>
+                    <h3>Invoices</h3>
                 </div>
+                <table class="table">
+                <thead>    
+                    <tr>
+                        <th>S.no.</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Invoice Date</th>
+                    </tr>
+                </thead>
+                <tbody id="invoices-table" ></tbody>
+            </table>
             </div>
         </div>
         <div id="right-box" style="flex:3">
@@ -81,7 +124,7 @@
                     <i class="fa-solid fa-file-invoice"></i>
                     <h4> Create a Contract</h4>
                 </div>
-                <div class="option">
+                <div class="option" id="send-an-invoice">
                     <i class="fa-solid fa-file-invoice-dollar"></i>
                     <h4> Send an Invoice</h4>
                 </div>
@@ -102,5 +145,8 @@
         </div>
     </div>
 </article>
+<section id="main_loader">
+    <img src="https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif" alt="">
+</section>
 </html>
 <script src="Scripts/src/dashboard1.js" type="module"></script>

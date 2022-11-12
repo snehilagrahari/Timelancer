@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/0e6a2e732f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+</head>
+<style>
+    #trial{
+    position:relative;
+    width:85%;
+    margin:30px auto;
+    padding:5px 40px;
+    background:rgb(210, 232, 247);
+    border:1px solid rgb(170, 221, 245);
+    z-index: -1;
+}
+#trial i{
+    color:blue;
+    position:absolute;
+    left:15px; 
+    top:21px;
+}
+.blue14{
+    color:blue;
+    font-size:14px
+}
+.black12{
+    color:black;
+    font-size:12px;
+}
+#set{
+    
+    margin:auto;
+    border:1px solid grey;
+}
+h2{
+    margin-left:100px;
+}
+.hea{
+    display:flex;
+    gap:50px;
+    padding:12px;
+    padding-bottom: 0px;
+    align-items: center;
+}
+.hea>h4:nth-child(1){
+    margin-left:88px;
+    background-color: #6bbcbb;
+    
+    padding:12px;
+}
+.hea>h4:hover{
+    padding:12px;
+    background-color: #6bbcbb;
+}
+#tab{
+    margin-left:100px;
+    width:23%;
+    border:0px solid red;
+    line-height: 35px;
+    font-size: 13px;
+
+}
+#tab>p:nth-child(1){
+    font-weight: bolder;
+}
+#tab>p:hover{
+    color:#4c525a;
+    font-weight: bolder;
+
+}
+#tablet{
+    display:flex;
+   
+}
+#prof{
+    width:60%;
+    border:1px solid grey;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.pro{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+.pro>p{
+    margin:30px;
+    align-items: center;
+}
+.pro>button{
+    background-color: #6bbcbb;
+    color:white;
+    border:none;
+    border-radius: 3px;
+    margin:30px;
+    padding:10px;
+}
+.pro>button:hover{
+    background-color: #00b289;
+    
+}
+#pic{
+    width:27%;
+    border:0px solid #4c525a;
+}
+#pic>div>input{
+    width:65%;
+    height:120px;
+    margin:30px;
+    text-align: center;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#titl{
+    display:flex;
+    gap:50px;
+}
+#imp>p:nth-child(1){
+    margin-top:35px;
+}
+#imp>input{
+    padding:10px;
+    width:350px;
+    border:1px solid rgb(187, 182, 182);
+}
+
+#password_div
+{
+    width:90%;
+    margin:auto;
+    border:none;
+    padding:20px auto;
+}
+#dropdown{
+    display : none;
+    margin:20px auto;
+}
+#update_password>input{
+    padding:12px 7px;
+    border:1px solid lightgrey;
+    outline:0;
+}
+#update_password input:last-child{
+    background:#6bbcbb;
+    color:white;
+    cursor:pointer;
+}
+#update_password input:last-child:hover{
+    background-color:#00b289
+}
+#update_password>h6{
+    margin-top:0px;
+}
+#upass{
+    cursor:pointer;
+    margin:20px 0px;
+}
+
+</style>
+<body>
+    <nav id="sidebar">
+         <!-- Import Sidebar body -->
+    </nav>
+    <div id="navbar"></div>
+    <div id="set">
+
+        <h2>Settings</h2>
+        <div class="hea">
+            <h4>Account</h4>
+            <h4>Branding</h4>
+            <h4>Partners</h4>
+            <h4>Integrations & Data</h4>
+            <h4>Subscription</h4>
+        </div>
+        
+    </div>
+    <div id="tablet">
+        <div id="tab">
+            <p>Profile Settings</p>
+            <p>Company Settings</p>
+            <p>Default Client Messages</p>
+            <p>Notifications & Alerts</p>
+            <p>Client Portal</p>
+            <p>Subcontractor Mode</p>
+        </div>
+        <div id="prof">
+            <div class="pro">
+                <p style="font-weight:bold;">Profile Settings</p>
+                <button>Save Changes</button>
+            </div>
+            <div id="titl">
+                <div id="pic">
+                    <div>
+                        <input type="url" placeholder="Add An image">
+                    </div>
+                </div>
+                <div id="imp">
+                    <p>FIRST NAME</p>
+                    <input type="text" placeholder="Jane">
+                    <p>LAST NAME</p>
+                    <input type="text" placeholdre="Smith">
+                    <p>EMAIL</p>
+                    <input type="text" placeholder="my@email.com">
+                    <p>TITLE</p>
+                    <input type="text" placeholder="Operations Director">
+                </div>
+            </div>
+
+            <div id="password_div">
+                <div id="upass" style="color:#6bbcbb;font-weight:bold;"><i class="fa-solid fa-angle-down"></i>&nbsp;&nbsp;Update Password</div>
+                <div id="dropdown">
+                    <form id="update_password">
+                        <p>NEW PASSWORD</p>
+                        <input type="password" placeholder="New Password" required id="new_password">
+                        <h6>Your password must be at least 6 characters</h6>
+                        <input type="submit" value="Change Password">
+                    </form>
+                </div>    
+                  
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+<article id="new-data">
+    <div id="box">
+        <button id="close-box">X</button>
+        <div id="form">
+            <!-- Appending form as per use -->
+        </div>
+    </div>
+</article>
+</html>
+<script type="module" src="Scripts/src/profile.js">
+
+
+
+</script>

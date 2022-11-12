@@ -32,34 +32,53 @@
             </p>
         </section>
         <div id="client-data">
+
             <div id="int-btn">
+
                 <div id="client-filter-btn">
-                    <div id="search-icon"></div>
-                    <div id="client-filter">Filter
-                        <label>STATUS</label>
-                        <select id="client-status">
-                            <option value="Active">Active</option>
-                            <option value="Archived">Archived</option>
-                        </select>
-                        <label>TAGS</label>
-                        <select id="client-tags">
-                            <option value="client">client</option>
-                            <option value="Lead">Lead</option>
-                        </select>
+                    <div id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+                    <div id="client-filter">
+                        <div id="filter-btn">Filter</div>
+                        <div id="filter-data-option">
+                            <label>STATUS</label><br>
+                            <select id="client-status">
+                                <option value="Active">Active</option>
+                                <option value="Archived">Archived</option>
+                            </select><br>
+                            <label>TAGS</label><br>
+                            <select id="client-tags">
+                                <option value="client">client</option>
+                                <option value="Lead">Lead</option>
+                            </select>
+                        </div>
 
                     </div>
                 </div>
+
                 <div id="add-client-btn">New Client</div>
             </div>
-            <div id="table-lables">
-                <span>CLIENT</span>
-                <span>CONTACT NAME</span>
-                <span>CONTACT EMAIL</span>
-                <span>TAGS</span>
+
+            <table id="table-lables">
+                <thead>
+                    <tr>
+                        <th id="a">CLIENT</th>
+                        <th id="b">CONTACT NAME</th>
+                        <th id="c">CONTACT EMAIL</th>
+                        <th id="d">TAGS</th>
+                    </tr>
+
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+
+
+            <div id="clients-data-null">
+                <p> No clients to show.</p>
             </div>
-            <div id="clients-data-table">
-                No clients to show.
-            </div>
+
         </div>
 
     </div>
@@ -68,7 +87,7 @@
             <div class="row">
 
                 <div>
-                    <div>
+                    <div id="footer-links">
                         <a class="footer-link" href="#" target="_blank">
                             Feature Requests
                         </a>
@@ -87,7 +106,28 @@
                             Privacy policy
                         </a>
                     </div>
-                    <div class="footer-app-links"></div>
+                    <div id="footer-app-links">
+                        <a>
+                            <span class="footer-icon"></span>
+                            TimeLancer Apps:
+                        </a>
+                        <a class="footer-app-link" href="#" target="_blank">
+                            <span class="footer-icon-iphone"><i class="fa-duotone fa-mobile"></i></span>
+                            iPhone
+                        </a>
+                        <a class="footer-app-link" href="#" target="_blank">
+                            <span class="footer-icon-laptop"><i class="fa-solid fa-laptop"></i></span>
+                            MacOS
+                        </a>
+                        <a class="footer-app-link" href="#" target="_blank">
+                            <span class="footer-icon-iphone"><i class="fa-duotone fa-mobile"></i></span>
+                            Android
+                        </a>
+                        <a class="footer-app-link" target="_blank" href="#">
+                            <span class="footer-icon-chrome"><i class="fa-brands fa-chrome"></i></span>
+                            Chrome
+                        </a>
+                    </div>
 
                 </div>
 

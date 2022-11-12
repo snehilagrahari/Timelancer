@@ -10,16 +10,12 @@
     <link rel="stylesheet" href="Styles/projects.css">
     <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
 </head>
-<style>
-    
-</style>
+
 <body>
     <nav id="sidebar">
          <!-- Import Sidebar body -->
     </nav>
-    <section id="navbar">
-        <!-- import navbar -->
-    </section>
+    <div id="navbar"></div>
     <section id="trial">
         <i class="fa-solid fa-circle-info"></i>
         <p class="blue14">Start your 7-Day free trial now.</p>
@@ -50,7 +46,19 @@
                 <th>Client E-mail</th>
                 <th>Project Name</th>
                 <th>Status</th>
-                <th>Delete Project</th>
+                <th>
+                    <div class="dropdown">
+                        <span>&#10296;</span>
+                        <div class="dropdown-content">
+                            <p>View Project</p>
+                            <p>Completed</p>
+                            <p>Archived</p>
+                            <p>Delete Project</p>
+                        </div>
+                      </div>
+                    
+                </th>
+                
                
               </tr>
             </thead>
@@ -70,6 +78,18 @@
     </div>
 </article>
 </html>
-<script type="module" src="Scripts/src/projects.js">
-    
+<script type="module" >
+    import sidebar from "./Components/sidebar.js"
+
+    document.getElementById("sidebar").innerHTML = sidebar();
+    import {sidebarFun , Clients , Projects , Tasks } from "./Scripts/sidebarFun.js"
+
+    sidebarFun();
+
+    window.onload = () => {
+        document.getElementById("new-project").onclick = () =>{
+        document.getElementById("new-data").style.display = "grid";
+        document.getElementById("form").innerHTML = Projects();
+    }
+    }
 </script>
