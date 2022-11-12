@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Invoice - TimeLancer</title>
     <script
       src="https://kit.fontawesome.com/0e6a2e732f.js"
       crossorigin="anonymous"
@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="Styles/sidebar.css" />
     <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="Styles/invoice.css" />
-    <link rel="stylesheet" href="Styles/table.css" />
   </head>
   <style></style>
   <body>
@@ -24,15 +23,15 @@
       <!-- import navbar -->
     </section>
     <section id="trial">
-      <i class="fa-solid fa-circle-info"></i>
-      <p class="blue14">Start your 7-Day free trial now.</p>
+      
+      <p class="blue14"> <i class="fa-solid fa-circle-info"></i> Start your 7-Day free trial now.</p>
       <p class="black12">
         You currently don't have an active subscription.
-        <a href="#">Start your free Trial now!</a>
+        <a href="trial.html">Start your free Trial now!</a>
       </p>
     </section>
     <div id="upper_div">
-      <div>
+      <div id="upper_left">
         <h4>Get paid 3x faster with online payments.</h4>
         <img
           src="https://app.hellobonsai.com/packs/static/Visa-bedabd135e659ce6c723.png"
@@ -69,31 +68,25 @@
       <div class="search_advance_filter_btn">
         <select value="Filter With" id="dropdown">
           <option value="">Filter With</option>
-          <option value="Low">Paid</option>
-          <option value="Medium">Unpaid</option>
+          <option value="paid">Paid</option>
+          <option value="unpaid">Unpaid</option>
         </select>
       </div>
       <div><button id="newinvoice" class="btn">New Invoice</button></div>
     </div>
-    <div id="mid_div">
-      <div><p>Status</p></div>
-      <div><p>Client</p></div>
-      <div><p>Project</p></div>
-    </div>
-    <div>
+    <div id="table-div">
       <table id="table">
         <thead>
           <tr>
+            <th>S.NO.</th>
             <th>ISSUED ON</th>
-            <th>DUE ON</th>
-            <th>#</th>
-            <th>PROJECT</th>
-            <th>CLIENT</th>
-            <th>TOTAL</th>
-            <th>PAID</th>
+            <th>CLIENT NAME</th>
+            <th>CLIENT EMAIL</th>
+            <th>DELETE</th>
+            <th>STATUS</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="inv-table">
           <!-- Update the rows here using jsvascript -->
         </tbody>
       </table>
@@ -107,5 +100,6 @@
       </div>
     </div>
   </article>
+  
 </html>
 <script type="module" src="Scripts/src/Invoice.js"></script>

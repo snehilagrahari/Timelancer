@@ -283,7 +283,7 @@ function sidebarFun()
     }
     function loader(ch)
     {
-        document.getElementById(`${ch}`).innerHTML =`<div id="loader">
+        document.getElementById(ch).innerHTML =`<div id="loader">
         <img src="https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/200w.gif?cid=6c09b952am5ju0r8dn0b2kehmpuxw9rf5fo8qgv2s8ntxexr&rid=200w.gif&ct=g" alt="">
     </div>`;
     }
