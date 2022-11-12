@@ -439,7 +439,7 @@
 #loader{
     width:100%;
     display:grid;
-    margin:auto;
+    margin:10px;
     place-items:center;
     padding:20px 0px 40px 0px; 
 }

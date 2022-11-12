@@ -18,12 +18,15 @@ navbarFun();
 
 import getTime from "../TimeGen.js";
 
+
 window.onload = () => {
     let {day, date, month, time} = getTime();
     document.getElementById("date").innerText = date;
     document.getElementById("month").innerText = month;
     document.getElementById("day").innerText = day;
     document.getElementById("time").innerText = time;
+
+    getDetails();
 
 
     document.getElementById("show-dash").onclick = () => {
@@ -59,6 +62,7 @@ window.onload = () => {
     appendTasks();
     appendInvoices();
 }
+
 
 async function getClients()
 {
@@ -168,4 +172,21 @@ async function appendInvoices()
             box.innerHTML += str;
         })
     }
+}
+async function getDetails(){
+    mainLoaderON();
+    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/user`);
+
+    let data = await res.json();
+
+    document.getElementById("acc_name").innerText = data.username;
+    mainLoaderOFF();
+}
+function mainLoaderON()
+{
+    document.getElementById("main_loader").style.display = "grid";
+}
+function mainLoaderOFF()
+{
+    document.getElementById("main_loader").style.display = "none";
 }

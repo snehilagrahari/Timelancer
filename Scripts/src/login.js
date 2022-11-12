@@ -40,8 +40,11 @@ const Login = (e, p, data) => {
             if (el.password == p) {
                 flag = 2
                 put_data(el);
-                location.assign("dashboard.html")
-
+                alert("Login Successful!!");
+                setTimeout(() => {
+                    location.assign("dashboard.html")    
+                }, 1200);
+                
             }
 
         }
@@ -60,15 +63,17 @@ const Login = (e, p, data) => {
 
 const put_data = async (el) => {
 
+    let {username, id} = el;
     let res = await fetch(`https://obscure-wave-86373.herokuapp.com/user`, {
-        method: 'PUT',
-        body: JSON.stringify(el),
+        method: 'POST',
+        body: JSON.stringify({username, id}),
         headers: {
             'Content-Type': 'application/json',
         }
 
     });
-    let data = await res.json()
+    let data = await res.json();
+    console.log(data);
 
 }
 

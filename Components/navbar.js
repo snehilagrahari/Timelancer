@@ -28,10 +28,8 @@ const navbar = () =>{
                         </div>
                         <div id="timer-form">
                             <form id="create-timer" class="create">
-                                <label>Project Name</label>
-                                <input type="text" id="project_name" placeholder="Project Name" required>
                                 <label>Task Name</label>
-                                <input type="text" id="task_name "placeholder="Task Name" required>
+                                <select id="task_name" required></select>
                                 <input type="submit" value="Add Hours">
                             </form>
                         </div>
@@ -42,7 +40,7 @@ const navbar = () =>{
             </div>
         </div>
         <div id="account-div" class="relative">
-            <button id="account-name">SA</button>
+            <button id="account-name"><i class="fa-solid fa-user"></i></button>
             <button class="toggle"><i class="fa-solid fa-caret-down"></i></button>
             <div id="account-set">
                 <p><a href="trial.html">Get bonsai free</a></p>
