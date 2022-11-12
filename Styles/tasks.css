@@ -3,10 +3,10 @@ body{
 }
 #buttons_div{
     display: flex;
-    margin-left: 50px;
+    margin-left: 60px;
     /* border: 1px solid red; */
-    width: 400px;
-    justify-content: space-evenly;
+    width: 85%;
+    justify-content: space-between;
 }
 
 /* Dropdown Button */
@@ -14,9 +14,6 @@ body{
 
     /* border: 1px solid red; */
     width:150px;
-
-    
-
 }
 
 #newTask{
@@ -225,4 +222,95 @@ body{
 }
 #ellipsis {
     font-size: 25px;
+    color: black;
 }
+
+
+/* Add task table css */
+
+.table{
+    /* box-shadow: ; */
+    border-collapse: collapse;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    font-weight: bold;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+.table thead th{
+    background: #00b088;
+    color: #ffffff;
+}
+
+.table td, .table th{
+    padding: 10px 20px;
+}
+
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid #009578;
+}
+
+#task_head{
+    text-align: left;
+    padding-left: 50px;
+}
+
+/* 3 dot css */
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #e8ebf1;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown-responsive {
+    position: relative;
+    
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* a tag inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+
+  .dropdown:hover .dropbtn {
+    overflow-y: visible;
+    
+  }
+
+
+
+
+
