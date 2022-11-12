@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tasks - TimeLancer</title>
     <script src="https://kit.fontawesome.com/0e6a2e732f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Styles/sidebar.css">
     <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
@@ -55,21 +55,12 @@
     <!-- TASKS -->
 
     <div id="buttons_div">
-        
-
         <div class="container">
-
-            <button class="click">Active 
-                <span id="dropdown_activeBtn">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </span>
-            </button>
-            <div class="list">
-                <button class="links">Active</button>
-                <button class="links">Completed</button>
-                <button class="links">Archived</button>
-
-            </div>
+            <select value="Filter With" id="dropdown_activeBtn">
+                <option value="">Filter With</option>
+                <option value="active">Active</option>
+                <option value="completed">Completed</option>
+            </select>
 
         </div>
 
@@ -79,66 +70,91 @@
 
     <!-- Add task table -->
 
-    <table class="table">
-        <thead id="head_table">
-            <th id="task_head">TASKS</th>
-            <th>PROJECT</th>
-            <th>DUE DATE</th>
-            <th>STATUS</th>
-        </thead>
-        <tbody>
+    <div id="table-div">
+        <table class="table">
+            <thead id="head_table">
+                <tr>
+                <th>SR.NO.</th>
+                <th>TASKS</th>
+                <th>PROJECT</th>
+                <th>DUE DATE</th>
+                <th>WORK DURATION</th>
+                <th>DELETE</th>
+                <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- append the table data here -->
+            </tbody>
+        </table>
+    </div>
 
-        </tbody>
-    </table>
 
+    <footer class="footer">
+        <div class="box">
+            <div class="row">
 
+                <div>
+                    <div id="footer-links">
+                        <a class="footer-link" href="#" target="_blank">
+                            Feature Requests
+                        </a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#" target="_blank">
+                            Help Center
+                        </a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#" target="_blank">
+                            Blog &amp; Resources
+                        </a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#">Pricing</a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#" target="_blank">
+                            Privacy policy
+                        </a>
+                    </div>
+                    <div id="footer-app-links">
+                        <a>
+                            <span class="footer-icon"></span>
+                            TimeLancer Apps:
+                        </a>
+                        <a class="footer-app-link" href="#" target="_blank">
+                            <span class="footer-icon-iphone"><i class="fa-duotone fa-mobile"></i></span>
+                            iPhone
+                        </a>
+                        <a class="footer-app-link" href="#" target="_blank">
+                            <span class="footer-icon-laptop"><i class="fa-solid fa-laptop"></i></span>
+                            MacOS
+                        </a>
+                        <a class="footer-app-link" href="#" target="_blank">
+                            <span class="footer-icon-iphone"><i class="fa-duotone fa-mobile"></i></span>
+                            Android
+                        </a>
+                        <a class="footer-app-link" target="_blank" href="#">
+                            <span class="footer-icon-chrome"><i class="fa-brands fa-chrome"></i></span>
+                            Chrome
+                        </a>
+                    </div>
 
+                </div>
 
-
-
-
-
-    <!-- Add task section -->
-
-    <!-- <div id="task_table">
-        <section class="task_table_div1">
-            <div id="table__div1_task">TASK</div>
-            <section id="table_projectAnd_others">
-                <div>PROJECT</div>
-                <div>CLIENT</div>
-                <div>DUE DATE</div>
-            </section>
-        </section> -->
-
-        <!-- TASK table row addition section -->
-        <!-- <section id="task_table_div2">
-            <div>
-                <input id="checkbox" type="checkbox">
-                <input type="text" id="task_input" placeholder="Enter your task...">
             </div>
-
-            <div id="project_client_dueDate">
-                <select id="project_selection" name="project_selection">
-                    <option value="No project">No project</option>
-                    <option value="App clone">App clone</option>
-                    <option value="project-2">project-2</option>
-                    <option value="project-3">project-3</option>
-                </select>
-                <section>
-                    <input id="client_input" type="text" placeholder="--">
-                    <input type="date" id="date_div">
-                </section>
-
+            <div class="footer-legal-policies">
+                <div class="footer-disclaimer">
+                    ©2022 TimeLancer Technologies Inc — Payments, banking, and issuing services are provided by <a
+                        target="_blank" href="#">Stripe Payments Company</a>, Evolve Bank &amp;
+                    Trust (Member FDIC), and Celtic Bank (Member FDIC), respectively. TimeLancer is not a law firm, and
+                    does
+                    not provide legal services, advice, or representation.&nbsp;&nbsp;
+                    <a target="_blank" href="#">Terms</a>
+                    &nbsp;&nbsp;
+                    <a href="#" target="_blank">Credits</a>
+                </div>
             </div>
+        </div>
+    </footer>
 
-            <div>
-                <section id="ellipsis_section">
-                    <span id="ellipsis">&#10296;</span>
-                </section>
-            </div>
-            
-        </section>
-    </div> -->
 
 
 
