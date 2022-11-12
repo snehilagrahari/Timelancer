@@ -1,6 +1,6 @@
 let login_btn = document.getElementById("login-btn");
 login_btn.onclick = () => {
-    getLoginData()
+    getLoginData();
 }
 
 
@@ -39,7 +39,7 @@ const Login = (e, p, data) => {
 
             if (el.password == p) {
                 flag = 2
-                putdata(el)
+                put_data(el);
                 location.assign("dashboard.html")
 
             }
@@ -58,7 +58,7 @@ const Login = (e, p, data) => {
 }
 
 
-const putdata = async (el) => {
+const put_data = async (el) => {
 
     let res = await fetch(`https://obscure-wave-86373.herokuapp.com/user`, {
         method: 'PUT',

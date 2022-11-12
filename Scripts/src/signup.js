@@ -8,38 +8,19 @@ class User {
 
         let data = await res.json();
 
-        let flag = 0;
-
-        for (let i = 0; i < data.length; i++) {
-            if (data[i].email == e) {
-                flag = 0;
-                break;
-
+        for(let i=0;i<data.length;i++)
+        {
+            if(data[i].email == e)
+            {
+                return false;
             }
-            else {
-                flag = 1;
-            }
-
         }
-
-
-
-
-
-        if (flag == 1) {
-            return true
-        }
-        else {
-            return false
-        }
-
-
-
+        return true;
     }
 
     async signUP(e, n, p, c) {
         let isvalid = await this.validateuseremail(e);
-
+        console.log(isvalid);
         if (isvalid) {
             this.email = e
             this.username = n
@@ -61,10 +42,11 @@ class User {
             })
             let data = await res.json()
             alert("Registration Complete! Please Login")
+            location.assign("login.html");
         }
         else {
             alert("Email Already Exists!!!")
-            // location.reload()
+            location.reload();
         }
 
     }
@@ -92,3 +74,9 @@ const addData = () => {
     user.signUP(email, name, password, country, cruency)
 }
 
+
+window.onload = ()=>{
+    document.getElementById("login-btn").onclick= ()=>{
+        location.assign("login.html");
+    }
+}
