@@ -22,12 +22,8 @@ body{
   background: #6bbcbb;
   border:none;
   padding:12px 17px;
-  border-radius:4px;
+  border-radius:10px;
   cursor:pointer;
-
-    font-size: 15px;
-    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, arial, sans-serif;
-    font-weight: 550;
     letter-spacing: 0.05em;
     border-radius: 2px;
     width:150px;
@@ -54,30 +50,7 @@ body{
 
 }
 
-.click,.links {
 
-    padding: 9px 12px;
-
-    font-size: 15px;
-
-    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, arial, sans-serif;
-    font-weight: 550;
-
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 0.04em;
-
-    border: 1px solid silver;
-
-    border-radius: 2px;
-
-    width:150px;
-
-    /* color:#3a4551; */
-
-    transition: 0.3s;
-
-}
 
 #dropdown_activeBtn{
    
@@ -98,24 +71,10 @@ body{
     color: black;
 }
 
-.newlist {
-
-    transform: scaleY(1);
-
-}
-
 
 /* task table css */
 
-#task_table{
-    font-size: 14px;
-    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, arial, sans-serif;
-    width: 90%;
-    border: none;
-    height: 70px;
-    margin: auto;
-    margin-top: 50px;
-}
+
 .task_table_div1{
     /* border: 1px solid black; */
     display: flex;
@@ -131,9 +90,6 @@ body{
     width: 400px;
     justify-content: space-between;
     
-}
-#table_projectAnd_others>div{
-    font-size: 14px;
 }
 
 /* TASK table row addition section */
@@ -196,6 +152,7 @@ body{
     font-size: 25px;
     color: black;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 
 /* Add task table css */
@@ -203,6 +160,7 @@ body{
     width:90%;
     margin:40px auto;
     min-height:400px;
+    font-family: 'Montserrat', sans-serif;
 }
 .table{
     /* box-shadow: ; */
@@ -221,7 +179,6 @@ body{
 .table thead th{
   color:grey;
   text-align:left;
-  font-size:16px;
   font-weight:lighter;
   padding:10px;
   text-align:center;

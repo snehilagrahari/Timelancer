@@ -5,16 +5,16 @@ function sidebar(){
     </div>
     <div class="sidebar-sec">
         <ul>
-            <li><a href="#" class="category"><i class="fas fa-home"></i> &nbsp;Dashboard</a></li>
-            <li><a href="#" class="category"><i class="fas fa-users"></i> &nbsp;Clients</a></li>
-            <li><a href="#" class="category"><i class="fa-solid fa-folder"></i> &nbsp;Projects</a></li>
-            <li><a href="./tasks.html" class="category"><i class="fa-solid fa-list-check"></i> &nbsp;Tasks</a></li>
+            <li><a href="dashboard.html" class="category"><i class="fas fa-home"></i> &nbsp;Dashboard</a></li>
+            <li><a href="clients.html" class="category"><i class="fas fa-users"></i> &nbsp;Clients</a></li>
+            <li><a href="projects.html" class="category"><i class="fa-solid fa-folder"></i> &nbsp;Projects</a></li>
+            <li><a href="tasks.html" class="category"><i class="fa-solid fa-list-check"></i> &nbsp;Tasks</a></li>
         </ul>
     </div>
     <div class="sidebar-sec">
         <p class="sidebar-head">Tools</p>
         <ul>
-            <li><a href="#" class="category"><i class="fa-solid fa-file-invoice-dollar"></i> &nbsp;Invoice</a></li>
+            <li><a href="Invoice.html" class="category"><i class="fa-solid fa-file-invoice-dollar"></i> &nbsp;Invoices</a></li>
             <li><a href="#" class="category"><i class="fas fa-file-invoice"></i> &nbsp;Proposals</a></li>
             <li><a href="#" class="category"><i class="fa-sharp fa-solid fa-file"></i> &nbsp;Contracts</a></li>
             <li><a href="#" class="category"><i class="fa-solid fa-clock"></i> &nbsp;Time Tracking</a></li>

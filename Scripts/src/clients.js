@@ -69,9 +69,9 @@ async function appendClients(d) {
         col3.innerText = el.email;
 
         let col4 = document.createElement("td");
-        col4.innerText = `<i class="fa-solid fa-trash-can"style="color:red;cursor:pointer;"></i>`;
+        col4.innerHTML = `<i class="fa-solid fa-trash-can"style="color:red;cursor:pointer;"></i>`;
         col4.onclick = () => {
-            deleteInvoice(el.id);
+            deleteClient(el.id);
         }
 
 
@@ -85,7 +85,7 @@ async function appendClients(d) {
     })
 }
 
-const deleteInvoice = async (id) => {
+const deleteClient = async (id) => {
     loader("tbody");
     let res = await fetch(`https://obscure-wave-86373.herokuapp.com/clients/${id}`, {
         method: 'DELETE',

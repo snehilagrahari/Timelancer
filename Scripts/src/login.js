@@ -52,10 +52,10 @@ const Login = (e, p, data) => {
 
     });
     if (flag == 0) {
-        alert("register email does no exist")
+        alert("Email not registered!")
     }
     else if (flag == 1) {
-        alert("please check your password")
+        alert("Wrong Password! Try Again.")
     }
 
 }

@@ -151,7 +151,7 @@ async function setTaskTimer()
     loader("timer-list");
     let taskName = document.getElementById("task_name").value;
 
-    let addTime = (parseInt(displayHours.innerText)*60)+(parseInt(displayMinutes.innerText));    
+    let addTime = (parseInt(displayHours.innerText)*3600)+(parseInt(displayMinutes.innerText)*60)+(parseInt(displaySeconds.innerText));    
     displayHours.innerHTML= "00";
     displayMinutes.innerHTML = "00";
     displaySeconds.innerHTML = "00";
