@@ -174,12 +174,16 @@ async function appendInvoices()
     }
 }
 async function getDetails(){
+
     mainLoaderON();
+
     let res = await fetch(`https://obscure-wave-86373.herokuapp.com/user`);
 
     let data = await res.json();
 
-    document.getElementById("acc_name").innerText = data.username;
+    let nameArr = data.username.split(' ');
+    let name = nameArr[0];
+    document.getElementById("acc_name").innerText = name;
     mainLoaderOFF();
 }
 function mainLoaderON()

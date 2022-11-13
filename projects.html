@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Projects - TimeLancer</title>
     <script src="https://kit.fontawesome.com/0e6a2e732f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/sidebar.css">
     <link rel="stylesheet" href="Styles/projects.css">
@@ -22,53 +22,102 @@
         <p class="black12">You currently don't have an active subscription. <a href="#">Start your free Trial now!</a></p>
     </section>
     <div id="filt">
-        <div>
-            <h3>Filter By:</h3>
-            <div id="filte">
+            <di id="filte">
                 
-                <select>
+                <select id="filter-btn" value="Status">
                     <option value="">STATUS</option>
-                    <option value="Active">Active</option>
-                    <option value="Completed">Completed</option>
-                    <option value="Archived">Archived</option>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
                 </select>
+                <button id="new-project" class="add-btn">New Project</button>    
+            </div>
+    </div>
+    <div id="table-div">
+            <table id="table">
+                <thead>
+                <tr>
+                    <th>SR.NO.</th>
+                    <th>PROJECT</th>
+                    <th>CLIENT</th>
+                    <th>DUE-DATE</th>
+                    <th>DELETE</th>
+                    <th>STATUS</th>
+                </tr>
+                </thead>
+                <tbody id="pro-table">
+                <!-- Append all the rows here  -->
+                
+                </tbody>
+            </table>
+    </div>
+
+    <footer class="footer">
+        <div class="box">
+            <div class="row">
+    
                 <div>
-                    
-                    <button id="new-project" class="add-btn">New Project</button>
+                    <div id="footer-links">
+                        <a class="footer-link" href="#" target="_blank">
+                            Feature Requests
+                        </a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#" target="_blank">
+                            Help Center
+                        </a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#" target="_blank">
+                            Blog &amp; Resources
+                        </a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#">Pricing</a>
+                        <span class="footer-dot"></span>
+                        <a class="footer-link" href="#" target="_blank">
+                            Privacy policy
+                        </a>
+                    </div>
+                    <div id="footer-app-links">
+                        <a>
+                            <span class="footer-icon"></span>
+                            TimeLancer Apps:
+                        </a>
+                        <a class="footer-app-link" href="#" target="_blank">
+                            <span class="footer-icon-iphone"><i class="fa-duotone fa-mobile"></i></span>
+                            iPhone
+                        </a>
+                        <a class="footer-app-link" href="#" target="_blank">
+                            <span class="footer-icon-laptop"><i class="fa-solid fa-laptop"></i></span>
+                            MacOS
+                        </a>
+                        <a class="footer-app-link" href="#" target="_blank">
+                            <span class="footer-icon-iphone"><i class="fa-duotone fa-mobile"></i></span>
+                            Android
+                        </a>
+                        <a class="footer-app-link" target="_blank" href="#">
+                            <span class="footer-icon-chrome"><i class="fa-brands fa-chrome"></i></span>
+                            Chrome
+                        </a>
+                    </div>
+    
+                </div>
+    
+            </div>
+            <div class="footer-legal-policies">
+                <div class="footer-disclaimer">
+                    ©2022 TimeLancer Technologies Inc — Payments, banking, and issuing services are provided by <a
+                        target="_blank" href="#">Stripe Payments Company</a>, Evolve Bank &amp;
+                    Trust (Member FDIC), and Celtic Bank (Member FDIC), respectively. TimeLancer is not a law firm, and
+                    does
+                    not provide legal services, advice, or representation.&nbsp;&nbsp;
+                    <a target="_blank" href="#">Terms</a>
+                    &nbsp;&nbsp;
+                    <a href="#" target="_blank">Credits</a>
                 </div>
             </div>
-            
         </div>
-        <table>
-            <thead>
-              <tr>
-                <th>Client Name</th>
-                <th>Client E-mail</th>
-                <th>Project Name</th>
-                <th>Status</th>
-                <th>
-                    <div class="dropdown">
-                        <span>&#10296;</span>
-                        <div class="dropdown-content">
-                            <p>View Project</p>
-                            <p>Completed</p>
-                            <p>Archived</p>
-                            <p>Delete Project</p>
-                        </div>
-                      </div>
-                    
-                </th>
-                
-               
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Append all the rows here  -->
-              
-            </tbody>
-          </table>
-    </div>
+    </footer>
+
 </body>
+
 <article id="new-data">
     <div id="box">
         <button id="close-box">X</button>
@@ -78,18 +127,4 @@
     </div>
 </article>
 </html>
-<script type="module" >
-    import sidebar from "./Components/sidebar.js"
-
-    document.getElementById("sidebar").innerHTML = sidebar();
-    import {sidebarFun , Clients , Projects , Tasks } from "./Scripts/sidebarFun.js"
-
-    sidebarFun();
-
-    window.onload = () => {
-        document.getElementById("new-project").onclick = () =>{
-        document.getElementById("new-data").style.display = "grid";
-        document.getElementById("form").innerHTML = Projects();
-    }
-    }
-</script>
+<script src="Scripts/src/projects.js" type="module"></script>
