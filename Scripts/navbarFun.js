@@ -143,16 +143,15 @@ async function appendTasksOptions(){
         box.innerHTML += str;
     })
 }
-async function setTaskTimer(myTimer,title)
+async function setTaskTimer()
 {
 
-    event.preventDefault();
     document.getElementById("timer-form").style.display = "none";
     document.getElementById("timer-list").style.display = "block";
     loader("timer-list");
     let taskName = document.getElementById("task_name").value;
 
-    let addTime = (parseInt(displayHours.innerText)*3600)+(parseInt(displayMinutes.innerText)*60)+parseInt(displaySeconds.innerText);
+    let addTime = (parseInt(displayHours.innerText)*60)+(parseInt(displayMinutes.innerText));    
     displayHours.innerHTML= "00";
     displayMinutes.innerHTML = "00";
     displaySeconds.innerHTML = "00";

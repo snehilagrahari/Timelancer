@@ -45,7 +45,7 @@ const updatePass = async (id)=>{
         password
     }
     try{
-        let res = await fetch(`https://obscure-wave-86373.herokuapp.com/profile/${id}`,{
+        let res = await fetch(`https://obscure-wave-86373.herokuapp.com/profiles/${id}`,{
             method : 'PATCH',
             body : JSON.stringify(send_data),
             headers: {
@@ -63,7 +63,7 @@ const updatePass = async (id)=>{
         </div>`;
         setTimeout(()=>{
             location.assign("dashboard.html");
-        },1000);
+        },1200);
     }
     catch(err){
         console.log(err);
