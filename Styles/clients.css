@@ -36,7 +36,7 @@
 }
 
 #client-data {
-  height: 900px;
+  min-height:500px;
 }
 
 #int-btn {
@@ -55,7 +55,8 @@
   background-color: #6bbcbb;
   padding: 10px 20px 7px;
   border-radius: 3px;
-
+  margin:50px 0px;
+  cursor:pointer;
 }
 
 /* table {
@@ -69,15 +70,7 @@
 
 } */
 
-#a {
-  width: 30%;
-}
 
-#b,
-#c,
-#d {
-  width: 20%;
-}
 
 
 
@@ -159,7 +152,7 @@
 
 #table th {
   color: grey;
-  text-align: left;
+  text-align: center;
   font-size: 16px;
   font-weight: lighter;
   padding: 10px;
@@ -182,5 +175,5 @@
 #table td {
   padding: 10px;
   font-size: 14px;
-  text-align: left;
+  text-align: center;
 }

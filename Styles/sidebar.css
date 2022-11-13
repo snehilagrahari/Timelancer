@@ -385,7 +385,7 @@
     transition:300ms;
 }
 #timer-activity{
-    height:300px;
+    min-height:250px;
     display:flex;
 }
 #reset-timer{

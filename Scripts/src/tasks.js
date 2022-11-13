@@ -73,7 +73,7 @@ async function loadIntotable(){
     due_date.innerText = el.due_date;
 
     let time = document.createElement("td");
-    time.innerText = el.time+" min";
+    time.innerText = el.time+" sec";
 
     let col5 = document.createElement("td");
       col5.innerHTML = `<i class="fa-solid fa-trash-can" style="color:red;cursor:pointer;"></i>`;
@@ -148,7 +148,7 @@ async function appendTask(){
     due_date.innerText = el.due_date;
 
     let time = document.createElement("td");
-    time.innerText = el.time+" min";
+    time.innerText = el.time+" sec";
 
     let col5 = document.createElement("td");
       col5.innerHTML = `<i class="fa-solid fa-trash-can" style="color:red;cursor:pointer;"></i>`;
