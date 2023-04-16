@@ -37,7 +37,7 @@ window.onload = () => {
 
 async function getClients() {
 
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/clients`);
+    let res = await fetch(`https://timelancer-be.onrender.com/clients`);
 
     let data = res.json();
 
@@ -87,7 +87,7 @@ async function appendClients(d) {
 
 const deleteClient = async (id) => {
     loader("tbody");
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/clients/${id}`, {
+    let res = await fetch(`https://timelancer-be.onrender.com/clients/${id}`, {
         method: 'DELETE',
     })
 

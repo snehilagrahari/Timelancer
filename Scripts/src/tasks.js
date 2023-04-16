@@ -46,7 +46,7 @@ async function loadIntotable(){
     let status = document.getElementById("dropdown_activeBtn").value;
     if(status=="active" || status=="completed")
  {
-    const response = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks?status=${status}`);
+    const response = await fetch(`https://timelancer-be.onrender.com/tasks?status=${status}`);
     const data = await response.json();
     let i = 0;
     tableBody.innerHTML = null;
@@ -115,7 +115,7 @@ else{
 
 async function getTask(){
 
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks`);
+    let res = await fetch(`https://timelancer-be.onrender.com/tasks`);
     let data = await res.json();
     return data;
 }
@@ -188,7 +188,7 @@ async function appendTask(){
 
 const deleteTask = async (id) =>{
     loader("tableBody");
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks/${id}`,{
+    let res = await fetch(`https://timelancer-be.onrender.com/tasks/${id}`,{
       method : 'DELETE',
     })
   
@@ -204,7 +204,7 @@ const markAsCompleted = async (id)=>
     let send_data = {
         status: 'completed'
     }
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks/${id}`, {
+    let res = await fetch(`https://timelancer-be.onrender.com/tasks/${id}`, {
         method : 'PATCH',
         body : JSON.stringify(send_data),
         headers :{
@@ -222,7 +222,7 @@ const masrkasactive = async (id)=>{
     let send_data = {
       status : 'active'
     }
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks/${id}`,{
+    let res = await fetch(`https://timelancer-be.onrender.com/tasks/${id}`,{
       method : 'PATCH',
       body : JSON.stringify(send_data),
       headers :{
@@ -269,7 +269,7 @@ const masrkasactive = async (id)=>{
 
 // loadIntotable(document.querySelector("table"));
 
-// API key (heroku) - https://obscure-wave-86373.herokuapp.com/tasks
+// API key (heroku) - https://timelancer-be.onrender.com/tasks
 
  
 // Kindly DO NOT DELETE the below code --------------------------------------------
@@ -283,7 +283,7 @@ function masrkasactive(el){
             status : "active"
         }
     
-        let res = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks/${el}`, {
+        let res = await fetch(`https://timelancer-be.onrender.com/tasks/${el}`, {
     
         method: 'PATCH',
     
@@ -309,7 +309,7 @@ function markAsCompleted(el){
             status : "completed"
         }
     
-        let res = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks/${el}`, {
+        let res = await fetch(`https://timelancer-be.onrender.com/tasks/${el}`, {
     
         method: 'PATCH',
     

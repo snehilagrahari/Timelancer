@@ -26,7 +26,7 @@ window.onload = () => {
 
 async function getProjects()
 {
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/projects`);
+    let res = await fetch(`https://timelancer-be.onrender.com/projects`);
     let data = await res.json();
     return data;
 }
@@ -87,7 +87,7 @@ async function appendProjects()
 
 const deleteProject = async (id) =>{
     loader("pro-table");
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/projects/${id}`,{
+    let res = await fetch(`https://timelancer-be.onrender.com/projects/${id}`,{
       method : 'DELETE',
     })
   
@@ -101,7 +101,7 @@ const markAsCompleted = async (id)=>{
     let send_data = {
       status : 'completed'
     }
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/projects/${id}`,{
+    let res = await fetch(`https://timelancer-be.onrender.com/projects/${id}`,{
       method : 'PATCH',
       body : JSON.stringify(send_data),
       headers :{
@@ -118,7 +118,7 @@ const markAsActive = async (id)=>{
     let send_data = {
       status : 'active'
     }
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/projects/${id}`,{
+    let res = await fetch(`https://timelancer-be.onrender.com/projects/${id}`,{
       method : 'PATCH',
       body : JSON.stringify(send_data),
       headers :{
@@ -136,7 +136,7 @@ async function appendFilter(){
     let status = document.getElementById("filter-btn").value;
     if(status=="active"||status=="completed")
     {
-      let res = await fetch(`https://obscure-wave-86373.herokuapp.com/projects?status=${status}`);
+      let res = await fetch(`https://timelancer-be.onrender.com/projects?status=${status}`);
       let data = await res.json();
       let box = document.getElementById("pro-table");
       let i=0;

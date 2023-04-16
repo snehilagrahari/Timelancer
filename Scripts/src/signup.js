@@ -4,7 +4,7 @@ class User {
     }
 
     async validateuseremail(e) {
-        let res = await fetch('https://obscure-wave-86373.herokuapp.com/profiles');
+        let res = await fetch('https://timelancer-be.onrender.com/profiles');
 
         let data = await res.json();
 
@@ -31,7 +31,7 @@ class User {
 
 
 
-            const register_api = `https://obscure-wave-86373.herokuapp.com/profiles`
+            const register_api = `https://timelancer-be.onrender.com/profiles`
 
             let res = await fetch(register_api, {
                 method: 'POST',
@@ -41,7 +41,7 @@ class User {
                 }
             })
             let data = await res.json()
-            alert("Registration Complete! Please Login")
+            alert("Registration Complete! Please Login");
             location.assign("login.html");
         }
         else {

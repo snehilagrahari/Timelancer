@@ -39,7 +39,7 @@ async function appendFilter(){
   let status = document.getElementById("dropdown").value;
   if(status=="paid"||status=="unpaid")
   {
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/invoices?status=${status}`);
+    let res = await fetch(`https://timelancer-be.onrender.com/invoices?status=${status}`);
     let data = await res.json();
     let box = document.getElementById("inv-table");
     let i=0;
@@ -100,7 +100,7 @@ async function appendFilter(){
 
 async function getInvoices()
 {
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/invoices`);
+    let res = await fetch(`https://timelancer-be.onrender.com/invoices`);
     let data = await res.json();
     return data;
 }
@@ -161,7 +161,7 @@ async function appendInvoices()
 
 const deleteInvoice = async (id) =>{
   loader("inv-table");
-  let res = await fetch(`https://obscure-wave-86373.herokuapp.com/invoices/${id}`,{
+  let res = await fetch(`https://timelancer-be.onrender.com/invoices/${id}`,{
     method : 'DELETE',
   })
 
@@ -175,7 +175,7 @@ const markAsPaid = async (id)=>{
   let send_data = {
     status : 'paid'
   }
-  let res = await fetch(`https://obscure-wave-86373.herokuapp.com/invoices/${id}`,{
+  let res = await fetch(`https://timelancer-be.onrender.com/invoices/${id}`,{
     method : 'PATCH',
     body : JSON.stringify(send_data),
     headers :{
@@ -192,7 +192,7 @@ const markAsUnpaid = async (id)=>{
   let send_data = {
     status : 'unpaid'
   }
-  let res = await fetch(`https://obscure-wave-86373.herokuapp.com/invoices/${id}`,{
+  let res = await fetch(`https://timelancer-be.onrender.com/invoices/${id}`,{
     method : 'PATCH',
     body : JSON.stringify(send_data),
     headers :{

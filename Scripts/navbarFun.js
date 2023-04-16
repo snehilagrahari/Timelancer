@@ -128,7 +128,7 @@ const navbarFun = ()=>{
 
 async function getTasks(){
         
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks`);
+    let res = await fetch(`https://timelancer-be.onrender.com/tasks`);
 
     let data = res.json();
 
@@ -155,7 +155,7 @@ async function setTaskTimer()
     displayHours.innerHTML= "00";
     displayMinutes.innerHTML = "00";
     displaySeconds.innerHTML = "00";
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks?task=${taskName}`);
+    let res = await fetch(`https://timelancer-be.onrender.com/tasks?task=${taskName}`);
 
     let data = await res.json();
 
@@ -167,7 +167,7 @@ async function setTaskTimer()
 
     let id = data[0].id;
 
-    let response = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks/${id}`,{
+    let response = await fetch(`https://timelancer-be.onrender.com/tasks/${id}`,{
         method : 'PATCH',
         body : JSON.stringify(send_data),
         headers:{

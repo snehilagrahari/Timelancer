@@ -19,7 +19,7 @@ const getLoginData = () => {
 let getLogin = async (e, p) => {
 
 
-    const login_api = `https://obscure-wave-86373.herokuapp.com/profiles`
+    const login_api = `https://timelancer-be.onrender.com/profiles`
 
     const res = await fetch(login_api);
 
@@ -64,7 +64,7 @@ const Login = (e, p, data) => {
 const put_data = async (el) => {
 
     let {username, id} = el;
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/user`, {
+    let res = await fetch(`https://timelancer-be.onrender.com/user`, {
         method: 'POST',
         body: JSON.stringify({username, id}),
         headers: {

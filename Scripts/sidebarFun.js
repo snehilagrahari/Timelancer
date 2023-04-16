@@ -107,7 +107,7 @@ function sidebarFun()
             }
             loader("form");
             try{
-                let res = await fetch(`https://obscure-wave-86373.herokuapp.com/clients`,{
+                let res = await fetch(`https://timelancer-be.onrender.com/clients`,{
                     method : 'POST',
                     body : JSON.stringify(send_data),
                     headers : {
@@ -143,7 +143,7 @@ function sidebarFun()
             }
             try{
                 loader("form");
-                let res = await fetch(`https://obscure-wave-86373.herokuapp.com/projects`,{
+                let res = await fetch(`https://timelancer-be.onrender.com/projects`,{
                     method : 'POST',
                     body : JSON.stringify(send_data),
                     headers : {
@@ -183,7 +183,7 @@ function sidebarFun()
             }
             loader("form");
             try{
-                let res = await fetch(`https://obscure-wave-86373.herokuapp.com/tasks`,{
+                let res = await fetch(`https://timelancer-be.onrender.com/tasks`,{
                     method : 'POST',
                     body : JSON.stringify(send_data),
                     headers : {
@@ -221,7 +221,7 @@ function sidebarFun()
             }
             loader("form");
             try{
-                let res = await fetch(`https://obscure-wave-86373.herokuapp.com/invoices`,{
+                let res = await fetch(`https://timelancer-be.onrender.com/invoices`,{
                     method : 'POST',
                     body : JSON.stringify(send_data),
                     headers : {
@@ -241,7 +241,7 @@ function sidebarFun()
     }
     async function getClients(){
         
-        let res = await fetch(`https://obscure-wave-86373.herokuapp.com/clients`);
+        let res = await fetch(`https://timelancer-be.onrender.com/clients`);
 
         let data = res.json();
 
@@ -258,7 +258,7 @@ function sidebarFun()
     }
     async function getProjects(){
         
-        let res = await fetch(`https://obscure-wave-86373.herokuapp.com/projects`);
+        let res = await fetch(`https://timelancer-be.onrender.com/projects`);
 
         let data = res.json();
 

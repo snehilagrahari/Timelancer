@@ -31,7 +31,7 @@ document.getElementById("update_password").onsubmit = async (event)=>{
     document.getElementById("new-data").style.display = "grid";
     loader("form");
     
-    let res = await fetch(`https://obscure-wave-86373.herokuapp.com/user`);
+    let res = await fetch(`https://timelancer-be.onrender.com/user`);
 
     let data = await res.json();
 
@@ -45,7 +45,7 @@ const updatePass = async (id)=>{
         password
     }
     try{
-        let res = await fetch(`https://obscure-wave-86373.herokuapp.com/profiles/${id}`,{
+        let res = await fetch(`https://timelancer-be.onrender.com/profiles/${id}`,{
             method : 'PATCH',
             body : JSON.stringify(send_data),
             headers: {
